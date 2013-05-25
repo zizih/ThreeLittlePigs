@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Little Red Riding Hood</string>
+    <string name="sp_name">LittleRedRidingHood</string>
+
+    <!--about language-->
+    <string name="lang_english">English</string>
+    <string name="lang_franch">Francais</string>
+    <string name="lang_eutsch">Deutsch</string>
+    <string name="lang_espanol">Español</string>
+    <string name="lang_italiano">Italiano</string>
+
+    <!--common gif-->
+    <string name="lang_deu_box">gif/common/lang_deu_box.gif</string>
+    <string name="lang_eng_box">gif/common/lang_eng_box.gif</string>
+    <string name="lang_esp_box">gif/common/lang_esp_box.gif</string>
+    <string name="lang_fra_box">gif/common/lang_fra_box.gif</string>
+    <string name="lang_ita_box">gif/common/lang_ita_box.gif</string>
+    <string name="lang_grand">gif/common/lang_grand.gif</string>
+    <string name="menu_grand">gif/common/menu_grand.gif</string>
+    <string name="menu_red">gif/common/menu_red.gif</string>
+    <string name="menu_wolf">gif/common/menu_wolf.gif</string>
+    <string name="p01_grand">gif/common/p01_grand.gif</string>
+    <string name="p01_red">gif/common/p01_red.gif</string>
+    <string name="p02_grand_loop">gif/common/p02_grand_loop.gif</string>
+    <string name="p02_grand_start">gif/common/p02_grand_start.gif</string>
+    <string name="p02_mother">gif/common/p02_mother.gif</string>
+    <string name="p02_window">gif/common/p02_window.gif</string>
+    <string name="p02_red">gif/common/p02_red.gif</string>
+    <string name="p03_board">gif/common/p03_board.gif</string>
+    <string name="p03_red">gif/common/p03_red.gif</string>
+    <string name="p03_wolf">gif/common/p03_wolf.gif</string>
+    <string name="p04_wolf">gif/common/p04_wolf.gif</string>
+    <string name="p04_grand">gif/common/p04_grand.gif</string>
+    <string name="p05_door">gif/common/p05_door.gif</string>
+    <string name="p05_grand">gif/common/p05_grand.gif</string>
+    <string name="p05_wolf">gif/common/p05_wolf.gif</string>
+    <string name="p06_red">gif/common/p06_red.gif</string>
+    <string name="p06_wolf">gif/common/p06_wolf.gif</string>
+    <string name="p07_red">gif/common/p07_red.gif</string>
+    <string name="p07_window">gif/common/p07_window.gif</string>
+    <string name="p07_wolf">gif/common/p07_wolf.gif</string>
+    <string name="p08_basket">gif/common/p08_basket.gif</string>
+    <string name="p08_hat">gif/common/p08_hat.gif</string>
+    <string name="p08_red">gif/common/p08_red.gif</string>
+    <string name="p08_wolf">gif/common/p08_wolf.gif</string>
+    <string name="p09_basket">gif/common/p09_basket.gif</string>
+    <string name="p09_hunter">gif/common/p09_hunter.gif</string>
+    <string name="p09_wolf">gif/common/p09_wolf.gif</string>
+    <string name="p10_cloud">gif/common/p10_cloud.gif</string>
+    <string name="p10_grand_red">gif/common/p10_grand_red.gif</string>
+    <string name="p10_hunter">gif/common/p10_hunter.gif</string>
+    <string name="p10_stone">gif/common/p10_stone.gif</string>
+    <string name="p10_wolf">gif/common/p10_wolf.gif</string>
+    <string name="p11_grand">gif/common/p11_grand.gif</string>
+    <string name="p11_hunter">gif/common/p11_hunter.gif</string>
+    <string name="p11_red">gif/common/p11_red.gif</string>
+    <string name="p11_wolf">gif/common/p11_wolf.gif</string>
+
+    <string name="p12_red">gif/common/p12_red.gif</string>
+
+    <!--about button-->
+    <string name="gif_lang_eng">gif/eng/</string>
+    <string name="gif_lang_fra">gif/fra/</string>
+    <string name="gif_lang_deu">gif/deu/</string>
+    <string name="gif_lang_esp">gif/esp/</string>
+    <string name="gif_lang_ita">gif/ita/</string>
+    <string name="gif_lang_default">gif/eng/</string>
+
+    <string name="menu_read_auto">menu_read_auto.gif</string>
+    <string name="menu_read_self">menu_read_self.gif</string>
+
+    <string name="p12_menu">p12_menu.gif</string>
+    <string name="p12_quit">p12_quit.gif</string>
+
+    <!--about sound-->
+    <string name="mp3_lang_eng">mp3/eng/</string>
+    <string name="mp3_lang_fra">mp3/fra/</string>
+    <string name="mp3_lang_deu">mp3/deu/</string>
+    <string name="mp3_lang_esp">mp3/esp/</string>
+    <string name="mp3_lang_ita">mp3/ita/</string>
+    <string name="mp3_lang_default">mp3/eng/</string>
+
+    <string name="mp3_lang">lang.mp3</string>
+    <string name="mp3_menu_auto">menu_auto.mp3</string>
+    <string name="mp3_menu_self">menu_self.mp3</string>
+    <string name="mp3_p01">page01.mp3</string>
+    <string name="mp3_p02">page02.mp3</string>
+    <string name="mp3_p03">page03.mp3</string>
+    <string name="mp3_p04">page04.mp3</string>
+    <string name="mp3_p05">page05.mp3</string>
+    <string name="mp3_p06">page06.mp3</string>
+    <string name="mp3_p07">page07.mp3</string>
+    <string name="mp3_p08">page08.mp3</string>
+    <string name="mp3_p09">page09.mp3</string>
+    <string name="mp3_p10">page10.mp3</string>
+    <string name="mp3_p11">page11.mp3</string>
+    <string name="mp3_p12">page12.mp3</string>
+    <string name="mp3_splash">splash.mp3</string>
+
+</resources>

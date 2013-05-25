@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/lang_bkg">
+
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_lang_eng"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/lang_eng_x"
+            android:layout_y="@dimen/lang_eng_y"
+            />
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_lang_fra"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/lang_fra_x"
+            android:layout_y="@dimen/lang_fra_y"
+            />
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_lang_deu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/lang_deu_x"
+            android:layout_y="@dimen/lang_deu_y"
+            />
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_lang_esp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/lang_esp_x"
+            android:layout_y="@dimen/lang_esp_y"
+            />
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_lang_ita"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/lang_ita_x"
+            android:layout_y="@dimen/lang_ita_y"
+            />
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_lang_grand"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/lang_grand_x"
+            android:layout_y="@dimen/lang_grand_y"
+            />
+
+</AbsoluteLayout>

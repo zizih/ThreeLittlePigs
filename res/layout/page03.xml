@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/layout_p03"
+        >
+
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p03_board"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p03_board_x"
+            android:layout_y="@dimen/p03_board_y"
+            />
+
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p03_red"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p03_red_x"
+            android:layout_y="@dimen/p03_red_y"
+            />
+    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p03_wolf"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p03_wolf_x"
+            android:layout_y="@dimen/p03_wolf_y"
+            />
+
+</AbsoluteLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Francais</item>
+        <item>Deutsch</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+
+    <string-array name="page_index">
+        <item>page01</item>
+        <item>page02</item>
+        <item>page03</item>
+        <item>page04</item>
+        <item>page05</item>
+        <item>page06</item>
+        <item>page07</item>
+        <item>page08</item>
+        <item>page09</item>
+        <item>page10</item>
+        <item>page11</item>
+        <item>page12</item>
+    </string-array>
+
+    <string-array name="wav_eng">
+         <item>lang</item>
+         <item>splash</item>
+        <item>page01</item>
+        <item>page02</item>
+        <item>page03</item>
+        <item>page04</item>
+        <item>page05</item>
+        <item>page06</item>
+        <item>page07</item>
+        <item>page08</item>
+        <item>page09</item>
+        <item>page10</item>
+        <item>page11</item>
+        <item>page12</item>
+    </string-array>
+</resources>
