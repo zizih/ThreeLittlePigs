@@ -13,37 +13,30 @@ import android.widget.AbsoluteLayout;
  */
 public class Page07 extends PageView {
 
-    private GifMovieView window;
-    private GifMovieView red;
-    private GifMovieView wolf;
+    private GifMovieView pig_brown;
+    private GifMovieView pig_yel;
+    private GifMovieView star;
 
     public Page07(Context context) {
         super(context, R.layout.page07);
 
-        window = (GifMovieView) page.findViewById(R.id.gif_p07_window);
-        red = (GifMovieView) page.findViewById(R.id.gif_p07_red);
-        wolf = (GifMovieView) page.findViewById(R.id.gif_p07_wolf);
+        pig_brown = (GifMovieView) page.findViewById(R.id.gif_p07_pig_brown);
+        pig_yel = (GifMovieView) page.findViewById(R.id.gif_p07_pig_yel);
+        star = (GifMovieView) page.findViewById(R.id.gif_p07_star);
 
-        window.setMovieAsset(ctx.getString(R.string.p07_window));
-        red.setMovieAsset(ctx.getString(R.string.p07_red));
-        wolf.setMovieAsset(ctx.getString(R.string.p07_wolf));
+        pig_brown.setMovieAsset(ctx.getString(R.string.p07_pig_brown));
+        pig_yel.setMovieAsset(ctx.getString(R.string.p07_pig_yel));
+        star.setMovieAsset(ctx.getString(R.string.p07_star));
 
-        window.setPaused(4000);
+        params = (AbsoluteLayout.LayoutParams) pig_brown.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p07_pig_brown_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p07_pig_brown_y));
+        pig_brown.setLayoutParams(params);
 
-        params = (AbsoluteLayout.LayoutParams) window.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p07_window_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p07_window_y));
-        window.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) red.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p07_red_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p07_red_y));
-        red.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p07_wolf_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p07_wolf_y));
-        wolf.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) pig_yel.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p07_pig_yel_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p07_pig_yel_y));
+        pig_yel.setLayoutParams(params);
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p07);
         layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(6));

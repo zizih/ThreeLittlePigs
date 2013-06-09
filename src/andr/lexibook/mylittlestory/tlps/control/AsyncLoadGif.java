@@ -22,10 +22,10 @@ public class AsyncLoadGif extends AsyncTask<Integer, Boolean, Boolean> {
      */
     @Override
     protected Boolean doInBackground(Integer... keys) {
-        if (keys.length == 1)
-            pageFactory.loadPage(keys[0]);
-        if (keys.length == 2)
-            pageFactory.loadPage(keys[0], keys[1]);
+//        if (keys.length == 1)
+//            pageFactory.loadPage(keys[0]);
+//        if (keys.length == 2)
+//            pageFactory.loadPage(keys[0], keys[1]);
         return true;
     }
 }

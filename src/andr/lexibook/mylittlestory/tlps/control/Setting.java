@@ -1,8 +1,8 @@
 package andr.lexibook.mylittlestory.tlps.control;
 
-import andr.lexibook.mylittlestory.lrrh.model.ReadMode;
-import andr.lexibook.mylittlestory.lrrh.ui.R;
-import andr.lexibook.mylittlestory.lrrh.util.ReadModeToFile;
+import andr.lexibook.mylittlestory.tlps.model.ReadMode;
+import andr.lexibook.mylittlestory.tlps.ui.R;
+import andr.lexibook.mylittlestory.tlps.util.ReadModeToFile;
 import android.content.Context;
 
 /**

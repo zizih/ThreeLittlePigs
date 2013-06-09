@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.ui.ViewIml;
 
-import andr.lexibook.mylittlestory.lrrh.control.MediaFactory;
+import andr.lexibook.mylittlestory.tlps.control.MediaFactory;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.media.MediaPlayer;

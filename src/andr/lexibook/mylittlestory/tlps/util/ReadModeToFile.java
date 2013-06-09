@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.util;
 
-import andr.lexibook.mylittlestory.lrrh.model.ReadMode;
+import andr.lexibook.mylittlestory.tlps.model.ReadMode;
 import android.app.Activity;
 import android.content.Context;
 

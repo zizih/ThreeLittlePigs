@@ -15,34 +15,50 @@ import android.widget.AbsoluteLayout;
  */
 public class Page13 extends PageView {
 
-    private GifMovieView wolf;
-    private GifMovieView sun;
+    private GifMovieView pig_blue;
+    private GifMovieView pigs;
+    private GifMovieView smoke;
+    private GifMovieView bird;
     private Intent menuIntent;
 
 
     public Page13(Context context) {
-        super(context, R.layout.page12);
+        super(context, R.layout.page13);
         menuIntent = new Intent();
         menuIntent.setClass(context, Menu.class);
 
-        wolf = (GifMovieView) page.findViewById(R.id.gif_p12_wolf);
-        sun = (GifMovieView) page.findViewById(R.id.gif_p12_sun);
+        pig_blue = (GifMovieView) page.findViewById(R.id.gif_p13_pig_blue);
+        pigs = (GifMovieView) page.findViewById(R.id.gif_p13_pigs);
+        smoke = (GifMovieView) page.findViewById(R.id.gif_p13_smoke);
+        bird = (GifMovieView) page.findViewById(R.id.gif_p13_bird);
 
-        wolf.setMovieAsset(ctx.getString(R.string.p12_wolf));
-        sun.setMovieAsset(ctx.getString(R.string.p12_sun));
+        pig_blue.setMovieAsset(ctx.getString(R.string.p13_pig_blue));
+        pigs.setMovieAsset(ctx.getString(R.string.p13_pigs));
+        smoke.setMovieAsset(ctx.getString(R.string.p13_smoke));
+        bird.setMovieAsset(ctx.getString(R.string.p13_bird));
 
-        params = (AbsoluteLayout.LayoutParams) sun.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_sun_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p12_sun_x));
-        sun.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) pigs.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_pigs_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_pigs_y));
+        pigs.setLayoutParams(params);
 
-        params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_wolf_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p12_wolf_y));
-        wolf.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) pig_blue.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_pig_blue_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_pig_blue_y));
+        pig_blue.setLayoutParams(params);
 
-        layout = (AbsoluteLayout) page.findViewById(R.id.layout_p12);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(11));
+        params = (AbsoluteLayout.LayoutParams) smoke.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_smoke_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_smoke_y));
+        smoke.setLayoutParams(params);
+
+        params = (AbsoluteLayout.LayoutParams) bird.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_bird_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_bird_y));
+        bird.setLayoutParams(params);
+
+        layout = (AbsoluteLayout) page.findViewById(R.id.layout_p13);
+        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(12));
     }
 
 }

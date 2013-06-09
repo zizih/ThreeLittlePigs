@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.ui.ViewIml;
 
-import andr.lexibook.mylittlestory.lrrh.control.PageFactory;
+import andr.lexibook.mylittlestory.tlps.control.PageFactory;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;

@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.libs;
 
-import andr.lexibook.mylittlestory.lrrh.libs.utils.AphidLog;
+import andr.lexibook.mylittlestory.tlps.libs.utils.AphidLog;
 import android.graphics.Bitmap;
 import android.opengl.GLUtils;
 import junit.framework.Assert;

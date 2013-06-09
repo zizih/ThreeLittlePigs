@@ -1,9 +1,9 @@
 package andr.lexibook.mylittlestory.tlps.control;
 
-import andr.lexibook.mylittlestory.lrrh.ui.R;
-import andr.lexibook.mylittlestory.lrrh.ui.ViewIml.MyProgressDialog;
-import andr.lexibook.mylittlestory.lrrh.ui.ViewIml.PageView;
-import andr.lexibook.mylittlestory.lrrh.ui.widget.*;
+import andr.lexibook.mylittlestory.tlps.ui.R;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.MyProgressDialog;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.PageView;
+import andr.lexibook.mylittlestory.tlps.ui.widget.*;
 import android.app.Activity;
 import android.content.Context;
 
@@ -43,6 +43,8 @@ public class PageFactory {
         pagesMap.put(pagesKey[9], Page10.class);
         pagesMap.put(pagesKey[10], Page11.class);
         pagesMap.put(pagesKey[11], Page12.class);
+        pagesMap.put(pagesKey[12], Page13.class);
+        pagesMap.put(pagesKey[13], Page14.class);
     }
 
     public static PageFactory getInstance(Context ctx) {
@@ -74,6 +76,7 @@ public class PageFactory {
 
     private void reloadPage() {
         Setting.getInstance(ctx).setOOM(true);
+        System.out.println("CallBack: " + callback == null);
         callback.diableFlip();
 
         //dialog

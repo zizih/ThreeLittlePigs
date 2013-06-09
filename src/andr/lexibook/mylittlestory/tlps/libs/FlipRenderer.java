@@ -1,7 +1,7 @@
 package andr.lexibook.mylittlestory.tlps.libs;
 
-import andr.lexibook.mylittlestory.lrrh.libs.utils.AphidLog;
-import andr.lexibook.mylittlestory.lrrh.libs.utils.TextureUtils;
+import andr.lexibook.mylittlestory.tlps.libs.utils.AphidLog;
+import andr.lexibook.mylittlestory.tlps.libs.utils.TextureUtils;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
 import android.view.View;

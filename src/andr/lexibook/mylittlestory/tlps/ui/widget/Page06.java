@@ -14,22 +14,22 @@ import android.widget.AbsoluteLayout;
 public class Page06 extends PageView {
 
 
-    private GifMovieView red;
+    private GifMovieView pigs;
     private GifMovieView wolf;
 
     public Page06(Context context) {
         super(context, R.layout.page06);
 
-        red = (GifMovieView) page.findViewById(R.id.gif_p06_red);
+        pigs = (GifMovieView) page.findViewById(R.id.gif_p06_pigs);
         wolf = (GifMovieView) page.findViewById(R.id.gif_p06_wolf);
 
-        red.setMovieAsset(ctx.getString(R.string.p06_red));
+        pigs.setMovieAsset(ctx.getString(R.string.p06_pigs));
         wolf.setMovieAsset(ctx.getString(R.string.p06_wolf));
 
-        params = (AbsoluteLayout.LayoutParams) red.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p06_red_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p06_red_y));
-        red.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) pigs.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p06_pigs_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p06_pigs_y));
+        pigs.setLayoutParams(params);
 
         params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
         params.x = (int) (getWidthScale() * getDimens(R.dimen.p06_wolf_x));

@@ -14,55 +14,37 @@ import android.widget.AbsoluteLayout;
  */
 public class Page02 extends PageView implements GifMovieView.DispearCallback {
 
-    private GifMovieView window;
-    private GifMovieView mother;
-    private GifMovieView red;
-    private GifMovieView grand_start;
-    private GifMovieView grand_loop;
+    private GifMovieView flower;
+    private GifMovieView butterfly;
+    private GifMovieView wolf;
 
     @SuppressWarnings("deprecation")
     public Page02(Context context) {
         super(context, R.layout.page02);
         //init
-        window = (GifMovieView) page.findViewById(R.id.gif_p02_window);
-        mother = (GifMovieView) page.findViewById(R.id.gif_p02_mother);
-        red = (GifMovieView) page.findViewById(R.id.gif_p02_red);
-        grand_start = (GifMovieView) page.findViewById(R.id.gif_p02_grand_start);
-        grand_loop = (GifMovieView) page.findViewById(R.id.gif_p02_grand_loop);
+        flower = (GifMovieView) page.findViewById(R.id.gif_p02_flower);
+        butterfly = (GifMovieView) page.findViewById(R.id.gif_p02_butterfly);
+        wolf = (GifMovieView) page.findViewById(R.id.gif_p02_wolf);
 
-        mother.setMovieAsset(ctx.getString(R.string.p02_mother));
-        window.setMovieAsset(ctx.getString(R.string.p02_window));
-        red.setMovieAsset(ctx.getString(R.string.p02_red));
-        grand_start.setMovieAsset(ctx.getString(R.string.p02_grand_start));
-        grand_loop.setMovieAsset(ctx.getString(R.string.p02_grand_loop));
-        grand_start.dispear(2080, this);
-        grand_loop.delay(2080);
-        window.setPaused(4240);
+        butterfly.setMovieAsset(ctx.getString(R.string.p02_flower));
+        flower.setMovieAsset(ctx.getString(R.string.p02_butterfly));
+        wolf.setMovieAsset(ctx.getString(R.string.p02_wolf));
 
-        params = (AbsoluteLayout.LayoutParams) mother.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_mother_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_mother_y));
-        mother.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) flower.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_flower_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_flower_y));
+        flower.setLayoutParams(params);
 
-        params = (AbsoluteLayout.LayoutParams) window.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_window_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_window_y));
-        window.setLayoutParams(params);
 
-        params = (AbsoluteLayout.LayoutParams) red.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_red_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_red_y));
-        red.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) butterfly.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_butterfly_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_butterfly_y));
+        butterfly.setLayoutParams(params);
 
-        params = (AbsoluteLayout.LayoutParams) grand_loop.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_grand_loop_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_grand_loop_y));
-        grand_loop.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) grand_start.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_grand_start_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_grand_start_y));
-        grand_start.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_wolf_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_wolf_y));
+        wolf.setLayoutParams(params);
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p02);
         layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(1));

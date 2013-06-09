@@ -16,7 +16,7 @@ limitations under the License.
  */
 package andr.lexibook.mylittlestory.tlps.libs;
 
-import andr.lexibook.mylittlestory.lrrh.libs.utils.AphidLog;
+import andr.lexibook.mylittlestory.tlps.libs.utils.AphidLog;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.view.View;

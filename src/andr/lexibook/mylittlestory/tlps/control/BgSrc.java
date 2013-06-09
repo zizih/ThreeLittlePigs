@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.control;
 
-import andr.lexibook.mylittlestory.lrrh.ui.R;
+import andr.lexibook.mylittlestory.tlps.ui.R;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -41,6 +41,8 @@ public class BgSrc {
             , R.drawable.eng_p10_bkg
             , R.drawable.eng_p11_bkg
             , R.drawable.eng_p12_bkg
+            , R.drawable.eng_p13_bkg
+            , R.drawable.eng_p14_end_bkg
     };
 
     private int[] fras = {R.drawable.fra_p01_bkg
@@ -55,6 +57,8 @@ public class BgSrc {
             , R.drawable.fra_p10_bkg
             , R.drawable.fra_p11_bkg
             , R.drawable.fra_p12_bkg
+            , R.drawable.fra_p13_bkg
+            , R.drawable.fra_p14_end_bkg
     };
 
     private int[] deus = {R.drawable.deu_p01_bkg
@@ -69,6 +73,8 @@ public class BgSrc {
             , R.drawable.deu_p10_bkg
             , R.drawable.deu_p11_bkg
             , R.drawable.deu_p12_bkg
+            , R.drawable.deu_p13_bkg
+            , R.drawable.deu_p14_end_bkg
     };
 
     private int[] esps = {R.drawable.esp_p01_bkg
@@ -83,6 +89,8 @@ public class BgSrc {
             , R.drawable.esp_p10_bkg
             , R.drawable.esp_p11_bkg
             , R.drawable.esp_p12_bkg
+            , R.drawable.esp_p13_bkg
+            , R.drawable.esp_p14_end_bkg
     };
 
     private int[] itas = {R.drawable.ita_p01_bkg
@@ -97,6 +105,8 @@ public class BgSrc {
             , R.drawable.ita_p10_bkg
             , R.drawable.ita_p11_bkg
             , R.drawable.ita_p12_bkg
+            , R.drawable.ita_p13_bkg
+            , R.drawable.ita_p14_end_bkg
     };
 
 

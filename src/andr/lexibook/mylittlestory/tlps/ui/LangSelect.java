@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.ui;
 
-import andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +20,7 @@ public class LangSelect extends BaseActivity implements GifMovieView.DispearCall
     private GifMovieView deu;
     private GifMovieView esp;
     private GifMovieView ita;
-    private GifMovieView grand;
+    private GifMovieView wolf;
     private AbsoluteLayout.LayoutParams params;
 
     @Override
@@ -34,14 +34,13 @@ public class LangSelect extends BaseActivity implements GifMovieView.DispearCall
         deu = (GifMovieView) findViewById(R.id.gif_lang_deu);
         esp = (GifMovieView) findViewById(R.id.gif_lang_esp);
         ita = (GifMovieView) findViewById(R.id.gif_lang_ita);
-        grand = (GifMovieView) findViewById(R.id.gif_lang_grand);
 
         eng.setMovieAsset(getString(R.string.lang_eng_box));
         fra.setMovieAsset(getString(R.string.lang_fra_box));
         deu.setMovieAsset(getString(R.string.lang_deu_box));
         esp.setMovieAsset(getString(R.string.lang_esp_box));
         ita.setMovieAsset(getString(R.string.lang_ita_box));
-        grand.setMovieAsset(getString(R.string.lang_grand));
+        wolf.setMovieAsset(getString(R.string.lang_wolf));
 
         params = (AbsoluteLayout.LayoutParams) eng.getLayoutParams();
         params.x = (int) (getWidthScale() * getDimens(R.dimen.lang_eng_x));
@@ -68,20 +67,10 @@ public class LangSelect extends BaseActivity implements GifMovieView.DispearCall
         params.y = (int) (getHeightScale() * getDimens(R.dimen.lang_ita_y));
         ita.setLayoutParams(params);
 
-        params = (AbsoluteLayout.LayoutParams) grand.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.lang_grand_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.lang_grand_y));
-        grand.setLayoutParams(params);
-
-//        eng.dispear(3400, this);
-//        fra.delay(3000);
-//        fra.dispear(3000 + 3400, this);
-//        deu.delay(3000 * 2);
-//        deu.dispear(3000 * 2 + 3400, this);
-//        esp.delay(3000 * 3);
-//        esp.dispear(3000 * 3 + 3000, this);
-//        ita.delay(3000 * 4);
-//        ita.dispear(3000 * 4 + 3000, this);
+        params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
+        params.x = (int) (getWidthScale() * getDimens(R.dimen.lang_wolf_x));
+        params.y = (int) (getHeightScale() * getDimens(R.dimen.lang_wolf_y));
+        wolf.setLayoutParams(params);
 
         eng.setOnClickListener(this);
         fra.setOnClickListener(this);

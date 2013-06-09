@@ -32,10 +32,10 @@ public class GifMovieView extends View {
     private Context ctx;
 
     private int mMovieResourceId;
-    private Movie mMovie;
+    protected Movie mMovie;
 
     private long mMovieStart;
-    private int mCurrentAnimationTime = 0;
+    protected int mCurrentAnimationTime = 0;
 
     private long mDelayStart;
     private long mDelayPeroid;

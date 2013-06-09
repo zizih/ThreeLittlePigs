@@ -17,9 +17,9 @@ limitations under the License.
 
 package andr.lexibook.mylittlestory.tlps.libs;
 
-import andr.lexibook.mylittlestory.lrrh.libs.utils.AphidLog;
-import andr.lexibook.mylittlestory.lrrh.libs.utils.TextureUtils;
-import andr.lexibook.mylittlestory.lrrh.libs.utils.UI;
+import andr.lexibook.mylittlestory.tlps.libs.utils.AphidLog;
+import andr.lexibook.mylittlestory.tlps.libs.utils.TextureUtils;
+import andr.lexibook.mylittlestory.tlps.libs.utils.UI;
 import android.view.MotionEvent;
 import android.view.View;
 import junit.framework.Assert;

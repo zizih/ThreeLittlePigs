@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.control;
 
-import andr.lexibook.mylittlestory.lrrh.ui.R;
+import andr.lexibook.mylittlestory.tlps.ui.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;

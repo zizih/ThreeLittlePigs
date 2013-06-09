@@ -17,15 +17,15 @@ limitations under the License.
 
 package andr.lexibook.mylittlestory.tlps.libs;
 
-import andr.lexibook.mylittlestory.lrrh.libs.utils.TextureUtils;
-import andr.lexibook.mylittlestory.lrrh.libs.utils.UI;
+import andr.lexibook.mylittlestory.tlps.libs.utils.TextureUtils;
+import andr.lexibook.mylittlestory.tlps.libs.utils.UI;
 import android.graphics.Bitmap;
 import android.view.View;
 
 import javax.microedition.khronos.opengles.GL10;
 import java.lang.ref.WeakReference;
 
-import static andr.lexibook.mylittlestory.lrrh.libs.FlipRenderer.checkError;
+import static andr.lexibook.mylittlestory.tlps.libs.FlipRenderer.checkError;
 
 public class ViewDualCards {
 

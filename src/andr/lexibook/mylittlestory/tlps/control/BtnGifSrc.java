@@ -1,6 +1,6 @@
 package andr.lexibook.mylittlestory.tlps.control;
 
-import andr.lexibook.mylittlestory.lrrh.ui.R;
+import andr.lexibook.mylittlestory.tlps.ui.R;
 import android.app.Activity;
 import android.content.Context;
 
@@ -71,10 +71,10 @@ public class BtnGifSrc {
      */
 
     public String getMenuBack() {
-        return this.langPath + ctx.getResources().getString(R.string.p12_menu);
+        return this.langPath + ctx.getResources().getString(R.string.p14_menu);
     }
 
     public String getQuit() {
-        return this.langPath + ctx.getResources().getString(R.string.p12_quit);
+        return this.langPath + ctx.getResources().getString(R.string.p14_quit);
     }
 }
