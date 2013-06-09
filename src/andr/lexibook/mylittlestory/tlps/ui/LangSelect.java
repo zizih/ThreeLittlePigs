@@ -34,6 +34,7 @@ public class LangSelect extends BaseActivity implements GifMovieView.DispearCall
         deu = (GifMovieView) findViewById(R.id.gif_lang_deu);
         esp = (GifMovieView) findViewById(R.id.gif_lang_esp);
         ita = (GifMovieView) findViewById(R.id.gif_lang_ita);
+        wolf = (GifMovieView) findViewById(R.id.gif_lang_wolf);
 
         eng.setMovieAsset(getString(R.string.lang_eng_box));
         fra.setMovieAsset(getString(R.string.lang_fra_box));
