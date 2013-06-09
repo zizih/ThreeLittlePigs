@@ -7,26 +7,19 @@
                 android:id="@+id/layout_p12"
         >
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p12_btn_menu"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p12_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p12_btn_menu_x"
-            android:layout_y="@dimen/p12_btn_menu_y"
+            android:layout_x="@dimen/p12_wolf_x"
+            android:layout_y="@dimen/p12_wolf_y"
             />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p12_btn_quit"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p12_sun"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p12_btn_quit_x"
-            android:layout_y="@dimen/p12_btn_quit_y"
-            />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p12_red"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p12_red_x"
-            android:layout_y="@dimen/p12_red_y"
+            android:layout_x="@dimen/p12_sun_x"
+            android:layout_y="@dimen/p12_sun_y"
             />
 
 </AbsoluteLayout>

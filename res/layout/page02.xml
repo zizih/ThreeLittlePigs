@@ -1,47 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:id="@+id/layout_p02"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_p02"
         >
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p02_window"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p02_flower"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p02_window_x"
-            android:layout_y="@dimen/p02_window_y"
+            android:layout_x="@dimen/p02_flower_x"
+            android:layout_y="@dimen/p02_flower_y"
             />
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p02_grand_start"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p02_butterfly"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p02_grand_start_x"
-            android:layout_y="@dimen/p02_grand_start_y"
+            android:layout_x="@dimen/p02_butterfly_x"
+            android:layout_y="@dimen/p02_butterfly_y"
             />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p02_grand_loop"
+
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p02_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p02_grand_loop_x"
-            android:layout_y="@dimen/p02_grand_loop_y"
-            />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p02_mother"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p02_mother_x"
-            android:layout_y="@dimen/p02_mother_y"
-            />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p02_red"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p02_red_x"
-            android:layout_y="@dimen/p02_red_y"
+            android:layout_x="@dimen/p02_wolf_x"
+            android:layout_y="@dimen/p02_wolf_y"
             />
 
 </AbsoluteLayout>

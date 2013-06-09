@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:id="@+id/layout_p09"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_p09"
         >
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p09_basket"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p09_pig_brown"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p09_basket_x"
-            android:layout_y="@dimen/p09_basket_y"
+            android:layout_x="@dimen/p09_pig_brown_x"
+            android:layout_y="@dimen/p09_pig_brown_y"
             />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p09_hunter"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p09_pig_yel"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p09_hunter_x"
-            android:layout_y="@dimen/p09_hunter_y"
+            android:layout_x="@dimen/p09_pig_yel_x"
+            android:layout_y="@dimen/p09_pig_yel_y"
             />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p09_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"

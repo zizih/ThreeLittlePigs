@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:id="@+id/layout_p03"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_p03"
         >
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p03_board"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p03_wood_house"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p03_board_x"
-            android:layout_y="@dimen/p03_board_y"
+            android:layout_x="@dimen/p03_wood_house_x"
+            android:layout_y="@dimen/p03_wood_house_y"
             />
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p03_red"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p03_pig_brown"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p03_red_x"
-            android:layout_y="@dimen/p03_red_y"
+            android:layout_x="@dimen/p03_pig_brown_x"
+            android:layout_y="@dimen/p03_pig_brown_y"
             />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p03_wolf"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p03_pig_yel"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p03_wolf_x"
-            android:layout_y="@dimen/p03_wolf_y"
+            android:layout_x="@dimen/p03_pig_yel_x"
+            android:layout_y="@dimen/p03_pig_yel_y"
             />
 
 </AbsoluteLayout>

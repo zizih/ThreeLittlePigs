@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_p13"
+        >
+
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p13_pig_blue"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p13_pig_blue_x"
+            android:layout_y="@dimen/p13_pig_blue_y"
+            />
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p13_pigs"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p13_pigs_x"
+            android:layout_y="@dimen/p13_pigs_y"
+            />
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p13_smoke"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p13_smoke_x"
+            android:layout_y="@dimen/p13_smoke_y"
+            />
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p13_bird"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p13_bird_x"
+            android:layout_y="@dimen/p13_bird_y"
+            />
+
+</AbsoluteLayout>

@@ -7,19 +7,19 @@
                 android:id="@+id/layout_p04"
         >
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p04_grand"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p04_tree_coud"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p04_grand_x"
-            android:layout_y="@dimen/p04_grand_y"
+            android:layout_x="@dimen/p04_tree_cloud_x"
+            android:layout_y="@dimen/p04_tree_cloud_y"
             />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p04_wolf"
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p04_pig_blue"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p04_wolf_x"
-            android:layout_y="@dimen/p04_wolf_y"
+            android:layout_x="@dimen/p04_pig_blue_x"
+            android:layout_y="@dimen/p04_pig_blue_y"
             />
 
 </AbsoluteLayout>

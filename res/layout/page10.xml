@@ -7,48 +7,12 @@
                 android:id="@+id/layout_p10"
         >
 
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p10_cloud"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p10_cloud_x"
-            android:layout_y="@dimen/p10_cloud_y"
-            />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p10_grand_red"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p10_grand_red_x"
-            android:layout_y="@dimen/p10_grand_red_y"
-            />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p10_hunter"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p10_hunter_x"
-            android:layout_y="@dimen/p10_hunter_y"
-            />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p10_stone"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p10_stone_x"
-            android:layout_y="@dimen/p10_stone_y"
-            />
-    <andr.lexibook.mylittlestory.lrrh.ui.ViewIml.GifMovieView
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p10_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_x="@dimen/p10_wolf_x"
             android:layout_y="@dimen/p10_wolf_y"
             />
-
-    <ImageView
-            android:id="@+id/img_bg_cover"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            android:layout_x="0px"
-            android:layout_y="0px"
-            android:src="@drawable/p10_bkg_cover"/>
 
 </AbsoluteLayout>

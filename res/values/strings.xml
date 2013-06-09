@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Little Red Riding Hood</string>
-    <string name="sp_name">LittleRedRidingHood</string>
+    <string name="app_name">ThreeLittlePigs</string>
+    <string name="sp_name">ThreeLittlePigs</string>
 
     <!--about language-->
     <string name="lang_english">English</string>
@@ -16,48 +16,65 @@
     <string name="lang_esp_box">gif/common/lang_esp_box.gif</string>
     <string name="lang_fra_box">gif/common/lang_fra_box.gif</string>
     <string name="lang_ita_box">gif/common/lang_ita_box.gif</string>
-    <string name="lang_grand">gif/common/lang_grand.gif</string>
-    <string name="menu_grand">gif/common/menu_grand.gif</string>
-    <string name="menu_red">gif/common/menu_red.gif</string>
-    <string name="menu_wolf">gif/common/menu_wolf.gif</string>
-    <string name="p01_grand">gif/common/p01_grand.gif</string>
-    <string name="p01_red">gif/common/p01_red.gif</string>
-    <string name="p02_grand_loop">gif/common/p02_grand_loop.gif</string>
-    <string name="p02_grand_start">gif/common/p02_grand_start.gif</string>
-    <string name="p02_mother">gif/common/p02_mother.gif</string>
-    <string name="p02_window">gif/common/p02_window.gif</string>
-    <string name="p02_red">gif/common/p02_red.gif</string>
-    <string name="p03_board">gif/common/p03_board.gif</string>
-    <string name="p03_red">gif/common/p03_red.gif</string>
-    <string name="p03_wolf">gif/common/p03_wolf.gif</string>
-    <string name="p04_wolf">gif/common/p04_wolf.gif</string>
-    <string name="p04_grand">gif/common/p04_grand.gif</string>
-    <string name="p05_door">gif/common/p05_door.gif</string>
-    <string name="p05_grand">gif/common/p05_grand.gif</string>
-    <string name="p05_wolf">gif/common/p05_wolf.gif</string>
-    <string name="p06_red">gif/common/p06_red.gif</string>
-    <string name="p06_wolf">gif/common/p06_wolf.gif</string>
-    <string name="p07_red">gif/common/p07_red.gif</string>
-    <string name="p07_window">gif/common/p07_window.gif</string>
-    <string name="p07_wolf">gif/common/p07_wolf.gif</string>
-    <string name="p08_basket">gif/common/p08_basket.gif</string>
-    <string name="p08_hat">gif/common/p08_hat.gif</string>
-    <string name="p08_red">gif/common/p08_red.gif</string>
-    <string name="p08_wolf">gif/common/p08_wolf.gif</string>
-    <string name="p09_basket">gif/common/p09_basket.gif</string>
-    <string name="p09_hunter">gif/common/p09_hunter.gif</string>
-    <string name="p09_wolf">gif/common/p09_wolf.gif</string>
-    <string name="p10_cloud">gif/common/p10_cloud.gif</string>
-    <string name="p10_grand_red">gif/common/p10_grand_red.gif</string>
-    <string name="p10_hunter">gif/common/p10_hunter.gif</string>
-    <string name="p10_stone">gif/common/p10_stone.gif</string>
-    <string name="p10_wolf">gif/common/p10_wolf.gif</string>
-    <string name="p11_grand">gif/common/p11_grand.gif</string>
-    <string name="p11_hunter">gif/common/p11_hunter.gif</string>
-    <string name="p11_red">gif/common/p11_red.gif</string>
-    <string name="p11_wolf">gif/common/p11_wolf.gif</string>
+    <string name="lang_wolf">gif/common/lang_wolf.gif</string>
 
-    <string name="p12_red">gif/common/p12_red.gif</string>
+    <string name="menu_pig_brown">gif/common/menu_pig_brown.gif</string>
+    <string name="menu_pig_blue">gif/common/menu_pig_blue.gif</string>
+    <string name="menu_pig_yel">gif/common/menu_pig_yellow.gif</string>
+
+    <string name="p01_pig_yel">gif/common/p01_pig_yellow.gif</string>
+    <string name="p01_pig_brown">gif/common/p01_pig_brown.gif</string>
+    <string name="p01_pig_blue">gif/common/p01_pig_blue.gif</string>
+    <string name="p01_pig_mom">gif/common/p01_pig_mom.gif</string>
+    <string name="p01_butterfly">gif/common/p01_butterfly.gif</string>
+
+    <string name="p02_flower">gif/common/p02_flower.gif</string>
+    <string name="p02_butterfly">gif/common/p02_butterfly.gif</string>
+    <string name="p02_wolf">gif/common/p02_wolf.gif</string>
+
+    <string name="p03_wolf">gif/common/p03_wolf.gif</string>
+    <string name="p03_pig_brown">gif/common/p03_pig_brown.gif</string>
+    <string name="p03_wood_house">gif/common/p03_wood_house.gif</string>
+    <string name="p03_pig_yel">gif/common/p03_pig_yellow.gif</string>
+
+    <string name="p04_tree_cloud">gif/common/p04_tree_cloud.gif</string>
+    <string name="p04_pig_blue">gif/common/p04_pig_blue.gif</string>
+
+    <string name="p05_wolf">gif/common/p05_wolf.gif</string>
+
+    <string name="p06_pigs">gif/common/p06_pigs.gif</string>
+    <string name="p06_wolf">gif/common/p06_wolf.gif</string>
+
+    <string name="p07_pig_brown">gif/common/p07_pig_brown.gif</string>
+    <string name="p07_pig_yel">gif/common/p07_pig_yellow.gif</string>
+    <string name="p07_star">gif/common/p07_star.gif</string>
+
+    <string name="p08_wolf">gif/common/p08_wolf.gif</string>
+    <string name="p08_pigs_house">gif/common/p08_pigs_house.gif</string>
+
+    <string name="p09_pig_brown">gif/common/p09_pig_brown.gif</string>
+    <string name="p09_wolf">gif/common/p09_wolf.gif</string>
+    <string name="p09_pig_yel">gif/common/p09_pig_yellow.gif</string>
+
+    <string name="p10_wolf">gif/common/p10_wolf.gif</string>
+
+    <string name="p11_sun">gif/common/p11_sun.gif</string>
+    <string name="p11_wolf">gif/common/p11_wolf.gif</string>
+    <string name="p11_win_pig">gif/common/p11_window_pig.gif</string>
+
+    <string name="p12_wolf">gif/common/p12_wolf.gif</string>
+    <string name="p12_sun">gif/common/p12_sun.gif</string>
+    <string name="p12_pigs">gif/common/p12_pigs.gif</string>
+    <string name="p12_pigs_blue">gif/common/p12_pigs_blue.gif</string>
+
+    <string name="p13_pig_blue">gif/common/p13_pig_blue.gif</string>
+    <string name="p13_pigs">gif/common/p13_pigs.gif</string>
+    <string name="p13_smoke">gif/common/p13_smoke.gif</string>
+    <string name="p13_bird">gif/common/p13_bird.gif</string>
+
+    <string name="p14_pigs">gif/common/p14_pigs.gif</string>
+    <string name="p14_pig_blue">gif/common/p14_pig_blue.gif</string>
+
 
     <!--about button-->
     <string name="gif_lang_eng">gif/eng/</string>
@@ -70,8 +87,8 @@
     <string name="menu_read_auto">menu_read_auto.gif</string>
     <string name="menu_read_self">menu_read_self.gif</string>
 
-    <string name="p12_menu">p12_menu.gif</string>
-    <string name="p12_quit">p12_quit.gif</string>
+    <string name="p14_menu">p14_menu.gif</string>
+    <string name="p14_quit">p14_quit.gif</string>
 
     <!--about sound-->
     <string name="mp3_lang_eng">mp3/eng/</string>
@@ -96,6 +113,7 @@
     <string name="mp3_p10">page10.mp3</string>
     <string name="mp3_p11">page11.mp3</string>
     <string name="mp3_p12">page12.mp3</string>
+    <string name="mp3_p13">page13.mp3</string>
+    <string name="mp3_p14">page14.mp3</string>
     <string name="mp3_splash">splash.mp3</string>
-
 </resources>
