@@ -15,7 +15,7 @@
             android:layout_x="@dimen/menu_pig_brown_x"
             android:layout_y="@dimen/menu_pig_brown_y"
             />
-    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.MenuBluePigGif
             android:id="@+id/gif_menu_pig_blue"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"

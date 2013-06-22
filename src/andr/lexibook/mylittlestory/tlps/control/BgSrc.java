@@ -29,6 +29,14 @@ public class BgSrc {
             , R.drawable.esp_splash
             , R.drawable.ita_splash};
 
+    private int[] menus = {
+            R.drawable.eng_menu_bkg
+            , R.drawable.fre_menu_bkg
+            , R.drawable.deu_menu_bkg
+            , R.drawable.esp_menu_bkg
+            , R.drawable.ita_menu_bkg
+    };
+
     private int[] engs = {R.drawable.eng_p01_bkg
             , R.drawable.eng_p02_bkg
             , R.drawable.eng_p03_bkg
@@ -156,6 +164,10 @@ public class BgSrc {
 
     public int getSplashDrawableId() {
         return splashs[this.langId];
+    }
+
+    public int getMenuDrawableId() {
+        return menus[this.langId];
     }
 
     public void Clear() {

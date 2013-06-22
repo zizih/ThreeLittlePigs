@@ -93,6 +93,14 @@ public class MediaFactory {
         return getMedia(ctx.getResources().getString(R.string.mp3_p12));
     }
 
+    public MediaPlayer getPage13() {
+        return getMedia(ctx.getResources().getString(R.string.mp3_p13));
+    }
+
+    public MediaPlayer getPage14() {
+        return getMedia(ctx.getResources().getString(R.string.mp3_p14));
+    }
+
     public MediaPlayer getSplash() {
         return getMedia(ctx.getResources().getString(R.string.mp3_splash));
     }

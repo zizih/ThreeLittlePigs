@@ -25,13 +25,13 @@ public class Splash extends BaseActivity implements View.OnClickListener {
         btn_splash_bg.setOnClickListener(this);
         refreshBg();
 
-//        mPlayer = mediaFactory.getSplash();
-//        try {
-//            mPlayer.prepare();
-//            mPlayer.start();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        mPlayer = mediaFactory.getSplash();
+        try {
+            mPlayer.prepare();
+            mPlayer.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -51,10 +51,10 @@ public class Splash extends BaseActivity implements View.OnClickListener {
 
     private void toMenu() {
         toMenued = true;
-//        if (mPlayer != null) {
-//            mPlayer.release();
-//            mPlayer = null;
-//        }
+        if (mPlayer != null) {
+            mPlayer.release();
+            mPlayer = null;
+        }
         if (setting.isFirst()) {
             setting.setFirst(false);
             setting.save();

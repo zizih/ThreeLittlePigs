@@ -76,12 +76,11 @@ public class PageFactory {
 
     private void reloadPage() {
         Setting.getInstance(ctx).setOOM(true);
-        System.out.println("CallBack: " + callback == null);
         callback.diableFlip();
 
         //dialog
         MyProgressDialog dialog = new MyProgressDialog(ctx, pageIndex);
-        dialog.setMessage("Sorry! No enough memonry of your machine !");
+        dialog.setMessage("loading...");
         dialog.show();
 
         //after

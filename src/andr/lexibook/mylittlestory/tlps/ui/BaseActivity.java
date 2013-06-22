@@ -4,7 +4,7 @@ import andr.lexibook.mylittlestory.tlps.control.BgSrc;
 import andr.lexibook.mylittlestory.tlps.control.BtnGifSrc;
 import andr.lexibook.mylittlestory.tlps.control.MediaFactory;
 import andr.lexibook.mylittlestory.tlps.control.Setting;
-import andr.lexibook.mylittlestory.tlps.ui.ViewIml.MenuRedGif;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.MenuBluePigGif;
 import andr.lexibook.mylittlestory.tlps.util.ViewUtil;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +14,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -23,7 +22,7 @@ import java.io.IOException;
  * Date: 4/23/13
  * Time: 8:05 PM
  */
-public class BaseActivity extends Activity {
+public class BaseActivity extends Activity implements MenuBluePigGif.MenuCallBack {
 
     public final int ENGLISH = 0;
     public final int FRANCH = 1;
@@ -39,9 +38,9 @@ public class BaseActivity extends Activity {
 
     public Setting setting;
 
-//    public MediaFactory mediaFactory;
-//    public MediaPlayer mPlayer;
-//    public MediaPlayer langPlayer;
+    public MediaFactory mediaFactory;
+    public MediaPlayer mPlayer;
+    public MediaPlayer langPlayer;
 
     public BgSrc bgSrc;
     public BtnGifSrc btnSrc;
@@ -56,8 +55,8 @@ public class BaseActivity extends Activity {
         setting = Setting.getInstance(this);
 
         //about sound
-//        mediaFactory = MediaFactory.getInstance(this);
-//        mediaFactory.setLang(checkLangToPath(setting.getReadMode().getLang()));
+        mediaFactory = MediaFactory.getInstance(this);
+        mediaFactory.setLang(checkLangToPath(setting.getReadMode().getLang()));
 
         //adapt difference dispay
         WIN_WIDTH = getWindowManager().getDefaultDisplay().getWidth();
@@ -121,29 +120,28 @@ public class BaseActivity extends Activity {
         }
         switch (langId) {
             case ENGLISH:
-//                langPlayer = mediaFactory.toEngLang().getLang();
+                langPlayer = mediaFactory.toEngLang().getLang();
                 break;
             case FRANCH:
-//                langPlayer = mediaFactory.toFraLang().getLang();
+                langPlayer = mediaFactory.toFraLang().getLang();
                 break;
             case EUTSCH:
-//                langPlayer = mediaFactory.toDeuLang().getLang();
+                langPlayer = mediaFactory.toDeuLang().getLang();
                 break;
             case ESPANOL:
-//                langPlayer = mediaFactory.toEspLang().getLang();
+                langPlayer = mediaFactory.toEspLang().getLang();
                 break;
             case ITALIANO:
-//                langPlayer = mediaFactory.toItaLang().getLang();
+                langPlayer = mediaFactory.toItaLang().getLang();
                 break;
         }
-//        try {
-//            langPlayer.prepare();
-//            langPlayer.start();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            langPlayer.prepare();
+            langPlayer.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         setting.setLang(langId);
-        Toast.makeText(this, "You Choose : " + setting.getLang(), 1000).show();
         setting.save();
     }
 
@@ -184,9 +182,9 @@ public class BaseActivity extends Activity {
         }
     }
 
-//    @Override
-//    public MediaPlayer getLangPlayer() {
-//        return langPlayer;
-//    }
+    @Override
+    public MediaPlayer getLangPlayer() {
+        return langPlayer;
+    }
 }
 

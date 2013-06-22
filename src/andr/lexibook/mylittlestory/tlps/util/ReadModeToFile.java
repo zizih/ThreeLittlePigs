@@ -27,7 +27,7 @@ public class ReadModeToFile implements ISerializeToFile<ReadMode> {
     @Override
     public void save(ReadMode cls) {
         try {
-            fo = ctx.openFileOutput("rhhl.setting",
+            fo = ctx.openFileOutput("tlps.setting",
                     Activity.MODE_PRIVATE);
             ObjectOutputStream oo = new ObjectOutputStream(fo);
             oo.writeObject(cls);
@@ -42,7 +42,7 @@ public class ReadModeToFile implements ISerializeToFile<ReadMode> {
     @Override
     public ReadMode get() {
         try {
-            fi = ctx.openFileInput("rhhl.setting");
+            fi = ctx.openFileInput("tlps.setting");
             ObjectInputStream oi = new ObjectInputStream(fi);
             cls = (ReadMode) oi.readObject();
             fi.close();

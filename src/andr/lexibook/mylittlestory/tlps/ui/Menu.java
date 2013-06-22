@@ -1,7 +1,9 @@
 package andr.lexibook.mylittlestory.tlps.ui;
 
+import andr.lexibook.mylittlestory.tlps.control.BgSrc;
 import andr.lexibook.mylittlestory.tlps.control.BtnGifSrc;
 import andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.MenuBluePigGif;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AbsoluteLayout;
@@ -9,23 +11,27 @@ import android.widget.AbsoluteLayout;
 /**
  * Created by rain on 6/8/13.
  */
+@SuppressWarnings("deprecation")
 public class Menu extends BaseActivity implements View.OnClickListener {
 
-    private GifMovieView pig_blue;
+    private MenuBluePigGif pig_blue;
     private GifMovieView pig_brown;
     private GifMovieView pig_yel;
     private GifMovieView btn_read_self;
     private GifMovieView btn_read_auto;
 
     private AbsoluteLayout.LayoutParams params;
+    private AbsoluteLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
         btnSrc = BtnGifSrc.getInstance(this);
+        bgSrc = BgSrc.getInstance(this);
+        layout = (AbsoluteLayout) findViewById(R.id.layout_menu);
 
-        pig_blue = (GifMovieView) findViewById(R.id.gif_menu_pig_blue);
+        pig_blue = (MenuBluePigGif) findViewById(R.id.gif_menu_pig_blue);
         pig_brown = (GifMovieView) findViewById(R.id.gif_menu_pig_brown);
         pig_yel = (GifMovieView) findViewById(R.id.gif_menu_pig_yel);
         btn_read_auto = (GifMovieView) findViewById(R.id.gif_menu_read_auto);
@@ -67,6 +73,7 @@ public class Menu extends BaseActivity implements View.OnClickListener {
         btn_read_auto.setOnClickListener(this);
         btn_read_self.setOnClickListener(this);
 
+        pig_blue.setMenuCallBack(this);
     }
 
     @Override
@@ -81,7 +88,9 @@ public class Menu extends BaseActivity implements View.OnClickListener {
             default:
                 break;
         }
+        pig_blue.releasePlay();
         toPage(Pages.class);
+        onDestroy();
     }
 
     @Override
@@ -92,5 +101,6 @@ public class Menu extends BaseActivity implements View.OnClickListener {
          */
         btn_read_auto.setMovieAsset(btnSrc.setLang(langId).getMenuAuto());
         btn_read_self.setMovieAsset(btnSrc.setLang(langId).getMenuSelf());
+        layout.setBackgroundResource(bgSrc.setLang(langId).getMenuDrawableId());
     }
 }

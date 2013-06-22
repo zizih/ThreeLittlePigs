@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Created by rain on 6/2/13.
  */
-public class MenuRedGif extends GifMovieView {
+public class MenuBluePigGif extends GifMovieView {
 
     private boolean isAutoPlayed = false;
     private boolean isSelfPlayed = false;
@@ -22,15 +22,15 @@ public class MenuRedGif extends GifMovieView {
     private MenuCallBack menuCallBack;
     private MenuListener endListener;
 
-    public MenuRedGif(Context context) {
+    public MenuBluePigGif(Context context) {
         super(context);
     }
 
-    public MenuRedGif(Context context, AttributeSet attrs) {
+    public MenuBluePigGif(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MenuRedGif(Context context, AttributeSet attrs, int defStyle) {
+    public MenuBluePigGif(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
