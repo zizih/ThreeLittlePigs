@@ -22,7 +22,7 @@
     <dimen name="menu_pig_blue_y">61px</dimen>
     <dimen name="menu_pig_yel_x">517px</dimen>
     <dimen name="menu_pig_yel_y">91px</dimen>
-    <dimen name="menu_read_auto_x">102px</dimen>
+    <dimen name="menu_read_auto_x">103px</dimen>
     <dimen name="menu_read_auto_y">321px</dimen>
     <dimen name="menu_read_self_x">441px</dimen>
     <dimen name="menu_read_self_y">325px</dimen>

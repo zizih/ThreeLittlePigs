@@ -7,6 +7,11 @@
                 android:id="@+id/layout_p12"
         >
 
+    <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:background="@drawable/p12_bkg_cover"></LinearLayout>
+
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p12_wolf"
             android:layout_height="wrap_content"

@@ -101,6 +101,5 @@ public class Menu extends BaseActivity implements View.OnClickListener {
          */
         btn_read_auto.setMovieAsset(btnSrc.setLang(langId).getMenuAuto());
         btn_read_self.setMovieAsset(btnSrc.setLang(langId).getMenuSelf());
-        layout.setBackgroundResource(bgSrc.setLang(langId).getMenuDrawableId());
     }
 }

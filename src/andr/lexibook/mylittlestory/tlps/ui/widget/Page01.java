@@ -18,8 +18,8 @@ public class Page01 extends PageView {
     private GifMovieView pig_brown;
     private GifMovieView pig_blue;
 
-    public Page01(Context context) {
-        super(context, R.layout.page01);
+    public Page01(Context context, CallBack cb) {
+        super(context, cb, R.layout.page01);
 
         pig_mom = (GifMovieView) page.findViewById(R.id.gif_p01_pig_mom);
         pig_yel = (GifMovieView) page.findViewById(R.id.gif_p01_pig_yel);

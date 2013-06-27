@@ -6,6 +6,11 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/layout_p07"
         >
+    <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:background="@drawable/p07_bkg_cover"></LinearLayout>
+
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p07_pig_brown"
             android:layout_height="wrap_content"
