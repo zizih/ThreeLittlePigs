@@ -45,20 +45,20 @@ public class BgSrc {
             , R.drawable.eng_p14_end_bkg
     };
 
-    private int[] fras = {R.drawable.fra_p01_bkg
-            , R.drawable.fra_p02_bkg
-            , R.drawable.fra_p03_bkg
-            , R.drawable.fra_p04_bkg
-            , R.drawable.fra_p05_bkg
-            , R.drawable.fra_p06_bkg
-            , R.drawable.fra_p07_bkg
-            , R.drawable.fra_p08_bkg
-            , R.drawable.fra_p09_bkg
-            , R.drawable.fra_p10_bkg
-            , R.drawable.fra_p11_bkg
-            , R.drawable.fra_p12_bkg
-            , R.drawable.fra_p13_bkg
-            , R.drawable.fra_p14_end_bkg
+    private int[] fras = {R.drawable.fre_p01_bkg
+            , R.drawable.fre_p02_bkg
+            , R.drawable.fre_p03_bkg
+            , R.drawable.fre_p04_bkg
+            , R.drawable.fre_p05_bkg
+            , R.drawable.fre_p06_bkg
+            , R.drawable.fre_p07_bkg
+            , R.drawable.fre_p08_bkg
+            , R.drawable.fre_p09_bkg
+            , R.drawable.fre_p10_bkg
+            , R.drawable.fre_p11_bkg
+            , R.drawable.fre_p12_bkg
+            , R.drawable.fre_p13_bkg
+            , R.drawable.fre_p14_end_bkg
     };
 
     private int[] deus = {R.drawable.deu_p01_bkg
@@ -173,7 +173,23 @@ public class BgSrc {
             }
         }
         drawableCache.clear();
-        System.gc();
-        System.gc();
+    }
+
+
+    private Drawable play;
+    private Drawable pause;
+
+    public Drawable getPlayDrawable() {
+        if (play == null) {
+            play = ctx.getResources().getDrawable(R.drawable.tlp_play);
+        }
+        return play;
+    }
+
+    public Drawable getPauseDrawable() {
+        if (pause == null) {
+            pause = ctx.getResources().getDrawable(R.drawable.tlp_pause);
+        }
+        return pause;
     }
 }

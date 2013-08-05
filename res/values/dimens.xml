@@ -121,4 +121,31 @@
     <dimen name="p14_quit_x">578px</dimen>
     <dimen name="p14_quit_y">378px</dimen>
 
+    <dimen name="btn_play_pause_p01_x">681px</dimen>
+    <dimen name="btn_play_pause_p01_y">404px</dimen>
+    <dimen name="btn_play_pause_p02_x">674px</dimen>
+    <dimen name="btn_play_pause_p02_y">420px</dimen>
+    <dimen name="btn_play_pause_p03_x">673px</dimen>
+    <dimen name="btn_play_pause_p03_y">410px</dimen>
+    <dimen name="btn_play_pause_p04_x">671px</dimen>
+    <dimen name="btn_play_pause_p04_y">411px</dimen>
+    <dimen name="btn_play_pause_p05_x">674px</dimen>
+    <dimen name="btn_play_pause_p05_y">420px</dimen>
+    <dimen name="btn_play_pause_p06_x">672px</dimen>
+    <dimen name="btn_play_pause_p06_y">420px</dimen>
+    <dimen name="btn_play_pause_p07_x">672px</dimen>
+    <dimen name="btn_play_pause_p07_y">408px</dimen>
+    <dimen name="btn_play_pause_p08_x">674px</dimen>
+    <dimen name="btn_play_pause_p08_y">423px</dimen>
+    <dimen name="btn_play_pause_p09_x">674px</dimen>
+    <dimen name="btn_play_pause_p09_y">407px</dimen>
+    <dimen name="btn_play_pause_p10_x">673px</dimen>
+    <dimen name="btn_play_pause_p10_y">420px</dimen>
+    <dimen name="btn_play_pause_p11_x">672px</dimen>
+    <dimen name="btn_play_pause_p11_y">422px</dimen>
+    <dimen name="btn_play_pause_p12_x">675px</dimen>
+    <dimen name="btn_play_pause_p12_y">409px</dimen>
+    <dimen name="btn_play_pause_p13_x">676px</dimen>
+    <dimen name="btn_play_pause_p13_y">418px</dimen>
+
 </resources>

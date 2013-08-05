@@ -26,4 +26,114 @@
         <item>page14</item>
     </string-array>
 
+    <integer-array name="lang_eng_location">
+        <item>135</item>
+        <item>79</item>
+        <item>343</item>
+        <item>145</item>
+    </integer-array>
+    <integer-array name="lang_fra_location">
+        <item>135</item>
+        <item>179</item>
+        <item>343</item>
+        <item>245</item>
+    </integer-array>
+    <integer-array name="lang_deu_location">
+        <item>135</item>
+        <item>279</item>
+        <item>343</item>
+        <item>345</item>
+    </integer-array>
+    <integer-array name="lang_esp_location">
+        <item>447</item>
+        <item>78</item>
+        <item>655</item>
+        <item>144</item>
+    </integer-array>
+    <integer-array name="lang_ita_location">
+        <item>448</item>
+        <item>175</item>
+        <item>656</item>
+        <item>241</item>
+    </integer-array>
+
+    <integer-array name="btn_play_pause_p01">
+        <item>681</item>
+        <item>404</item>
+        <item>729</item>
+        <item>445</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p02">
+        <item>674</item>
+        <item>420</item>
+        <item>722</item>
+        <item>454</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p03">
+        <item>673</item>
+        <item>410</item>
+        <item>721</item>
+        <item>464</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p04">
+        <item>671</item>
+        <item>411</item>
+        <item>719</item>
+        <item>456</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p05">
+        <item>674</item>
+        <item>420</item>
+        <item>722</item>
+        <item>464</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p06">
+        <item>672</item>
+        <item>420</item>
+        <item>720</item>
+        <item>464</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p07">
+        <item>672</item>
+        <item>408</item>
+        <item>720</item>
+        <item>462</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p08">
+        <item>674</item>
+        <item>423</item>
+        <item>722</item>
+        <item>467</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p09">
+        <item>674</item>
+        <item>407</item>
+        <item>722</item>
+        <item>451</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p10">
+        <item>673</item>
+        <item>420</item>
+        <item>721</item>
+        <item>464</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p11">
+        <item>672</item>
+        <item>422</item>
+        <item>720</item>
+        <item>466</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p12">
+        <item>675</item>
+        <item>409</item>
+        <item>723</item>
+        <item>453</item>
+    </integer-array>
+    <integer-array name="btn_play_pause_p13">
+        <item>676</item>
+        <item>418</item>
+        <item>724</item>
+        <item>462</item>
+    </integer-array>
+
 </resources>

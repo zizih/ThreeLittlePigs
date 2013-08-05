@@ -7,6 +7,11 @@
                 android:id="@+id/layout_splash"
         >
 
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/any_widget_4_menu_splash"/>
+
     <Button
             android:id="@+id/btn_splash_bg"
             android:layout_width="fill_parent"

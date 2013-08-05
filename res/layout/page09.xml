@@ -18,15 +18,17 @@
             android:id="@+id/gif_p09_pig_yel"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p09_pig_yel_x"
-            android:layout_y="@dimen/p09_pig_yel_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p09_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p09_wolf_x"
-            android:layout_y="@dimen/p09_wolf_y"
             />
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/tlp_pause"
+            android:visibility="gone"></AbsoluteLayout>
 
 </AbsoluteLayout>

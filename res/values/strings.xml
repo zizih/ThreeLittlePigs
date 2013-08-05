@@ -22,10 +22,7 @@
     <string name="menu_pig_blue">gif/common/menu_pig_blue.gif</string>
     <string name="menu_pig_yel">gif/common/menu_pig_yellow.gif</string>
 
-    <string name="p01_pig_yel">gif/common/p01_pig_yellow.gif</string>
-    <string name="p01_pig_brown">gif/common/p01_pig_brown.gif</string>
-    <string name="p01_pig_blue">gif/common/p01_pig_blue.gif</string>
-    <string name="p01_pig_mom">gif/common/p01_pig_mom.gif</string>
+    <string name="p01_pigs">gif/common/p01_allpig.gif</string>
     <string name="p01_butterfly">gif/common/p01_butterfly.gif</string>
 
     <string name="p02_flower">gif/common/p02_flower.gif</string>

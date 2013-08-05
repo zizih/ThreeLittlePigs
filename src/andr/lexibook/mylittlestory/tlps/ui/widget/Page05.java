@@ -21,12 +21,24 @@ public class Page05 extends PageView {
         wolf = (GifMovieView) page.findViewById(R.id.gif_p05_wolf);
         wolf.setMovieAsset(ctx.getString(R.string.p05_wolf));
 
-        params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p05_wolf_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p05_wolf_y));
-        wolf.setLayoutParams(params);
-
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p05);
         layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(4));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_p05_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_p05_y));
+            params.width = (int) (getWidthScale() * BTN_WIDTH);
+            params.height = (int) (getWidthScale() * BTN_HEIGHT);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        wolf.Clear();
     }
 }

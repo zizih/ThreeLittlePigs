@@ -5,29 +5,27 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/layout_menu"
-                android:background="@drawable/menu_bkg"
-        >
+                android:background="@drawable/menu_bkg">
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/any_widget_4_menu_menu"/>
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_menu_pig_brown"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/menu_pig_brown_x"
-            android:layout_y="@dimen/menu_pig_brown_y"
             />
-    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.MenuBluePigGif
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.BluePigGif
             android:id="@+id/gif_menu_pig_blue"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/menu_pig_blue_x"
-            android:layout_y="@dimen/menu_pig_blue_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_menu_pig_yel"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/menu_pig_yel_x"
-            android:layout_y="@dimen/menu_pig_yel_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_menu_read_auto"

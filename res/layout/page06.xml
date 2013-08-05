@@ -8,18 +8,22 @@
         >
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p06_pigs"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p06_pigs_x"
-            android:layout_y="@dimen/p06_pigs_y"
-            />
-    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p06_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p06_wolf_x"
-            android:layout_y="@dimen/p06_wolf_y"
             />
+
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p06_pigs"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/tlp_pause"
+            android:visibility="gone"></AbsoluteLayout>
 
 </AbsoluteLayout>

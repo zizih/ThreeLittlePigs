@@ -88,19 +88,6 @@ public class PageFactory {
         callback.autoFlip();
     }
 
-    public boolean newPage(int position) {
-        try {
-            pages.put(pagesKey[position], new WeakReference<PageView>((PageView) pagesMap.get(pagesKey[position]).getConstructors()[0].newInstance(ctx)));
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-        return pages.get(pagesKey[position]) != null;
-    }
-
     public void removePage(int postion) {
         if (pages.containsKey(pagesKey[postion])) {
             pages.remove(pagesKey[postion]);

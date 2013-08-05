@@ -3,11 +3,23 @@ package andr.lexibook.mylittlestory.tlps.libs;
 import andr.lexibook.mylittlestory.tlps.libs.utils.AphidLog;
 import android.graphics.Bitmap;
 import android.opengl.GLUtils;
+
 import junit.framework.Assert;
 
 import javax.microedition.khronos.opengles.GL10;
 
-import static javax.microedition.khronos.opengles.GL10.*;
+import static javax.microedition.khronos.opengles.GL10.GL_CLAMP_TO_EDGE;
+import static javax.microedition.khronos.opengles.GL10.GL_LINEAR;
+import static javax.microedition.khronos.opengles.GL10.GL_RGB;
+import static javax.microedition.khronos.opengles.GL10.GL_RGBA;
+import static javax.microedition.khronos.opengles.GL10.GL_TEXTURE_2D;
+import static javax.microedition.khronos.opengles.GL10.GL_TEXTURE_MAG_FILTER;
+import static javax.microedition.khronos.opengles.GL10.GL_TEXTURE_MIN_FILTER;
+import static javax.microedition.khronos.opengles.GL10.GL_TEXTURE_WRAP_S;
+import static javax.microedition.khronos.opengles.GL10.GL_TEXTURE_WRAP_T;
+import static javax.microedition.khronos.opengles.GL10.GL_UNSIGNED_BYTE;
+import static javax.microedition.khronos.opengles.GL10.GL_UNSIGNED_SHORT_4_4_4_4;
+import static javax.microedition.khronos.opengles.GL10.GL_UNSIGNED_SHORT_5_6_5;
 
 /*
 Copyright 2012 Aphid Mobile
@@ -56,7 +68,7 @@ public class Texture {
 
     if (AphidLog.ENABLE_DEBUG) {
       AphidLog.d("createTexture: %d, %d; POT: %d, %d", bitmap.getWidth(), bitmap.getHeight(), potW,
-              potH);
+                 potH);
     }
 
     gl.glGenTextures(1, t.id, 0);

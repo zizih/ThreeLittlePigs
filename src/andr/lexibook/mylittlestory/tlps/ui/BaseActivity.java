@@ -4,16 +4,15 @@ import andr.lexibook.mylittlestory.tlps.control.BgSrc;
 import andr.lexibook.mylittlestory.tlps.control.BtnGifSrc;
 import andr.lexibook.mylittlestory.tlps.control.MediaFactory;
 import andr.lexibook.mylittlestory.tlps.control.Setting;
-import andr.lexibook.mylittlestory.tlps.ui.ViewIml.MenuBluePigGif;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.BluePigGif;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.CustomMenuItem;
 import andr.lexibook.mylittlestory.tlps.util.ViewUtil;
-import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.view.MotionEvent;
 
 import java.io.IOException;
 
@@ -22,13 +21,7 @@ import java.io.IOException;
  * Date: 4/23/13
  * Time: 8:05 PM
  */
-public class BaseActivity extends Activity implements MenuBluePigGif.MenuCallBack {
-
-    public final int ENGLISH = 0;
-    public final int FRANCH = 1;
-    public final int EUTSCH = 2;
-    public final int ESPANOL = 3;
-    public final int ITALIANO = 4;
+public class BaseActivity extends CustomMenuBase implements BluePigGif.MenuCallBack {
 
     public int WIN_WIDTH;
     public int WIN_HEIGHT;
@@ -47,7 +40,7 @@ public class BaseActivity extends Activity implements MenuBluePigGif.MenuCallBac
     public boolean langChanged;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(" Oncreate: ", this.getClass().getName());
         toPage = new Intent();
@@ -64,32 +57,20 @@ public class BaseActivity extends Activity implements MenuBluePigGif.MenuCallBac
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        inflater.inflate(R.menu.language, menu);
-        return true;
+    public boolean checkLocation(MotionEvent event, int[] location) {
+        if (event.getX() > location[0] * getWidthScale()
+                && event.getY() > location[1] * getHeightScale()
+                && event.getX() < location[2] * getWidthScale()
+                && event.getY() < location[3] * getHeightScale()) {
+            return true;
+        }
+        return false;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.lang_english:
-                setLanguage(ENGLISH);
-                break;
-            case R.id.lang_franch:
-                setLanguage(FRANCH);
-                break;
-            case R.id.lang_eutsch:
-                setLanguage(EUTSCH);
-                break;
-            case R.id.lang_espanol:
-                setLanguage(ESPANOL);
-                break;
-            case R.id.lang_italiano:
-                setLanguage(ITALIANO);
-                break;
-        }
-        return true;
+    public void MenuItemSelectedEvent(CustomMenuItem selection) {
+        super.MenuItemSelectedEvent(selection);
+        setLanguage(selection.getId());
     }
 
     @Override
@@ -104,6 +85,7 @@ public class BaseActivity extends Activity implements MenuBluePigGif.MenuCallBac
     /**
      * 清理gif后 页面跳转
      */
+
     public void toPage(Class<?> cls) {
         toPage.setClass(this, cls);
         startActivity(toPage);
@@ -165,6 +147,14 @@ public class BaseActivity extends Activity implements MenuBluePigGif.MenuCallBac
         return ViewUtil.getInstance(this).getHeightScale();
     }
 
+    public float getWinWidth() {
+        return ViewUtil.getInstance(this).getWinWidth();
+    }
+
+    public float getWinHeight() {
+        return ViewUtil.getInstance(this).getWinHeight();
+    }
+
     private String checkLangToPath(String lang) {
         switch (setting.checkLangToId(lang)) {
             case ENGLISH:
@@ -180,6 +170,12 @@ public class BaseActivity extends Activity implements MenuBluePigGif.MenuCallBac
             default:
                 return getResources().getString(R.string.mp3_lang_default);
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        onDestroy();
     }
 
     @Override

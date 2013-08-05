@@ -1,8 +1,8 @@
 package andr.lexibook.mylittlestory.tlps.ui.widget;
 
+import andr.lexibook.mylittlestory.tlps.ui.R;
 import andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView;
 import andr.lexibook.mylittlestory.tlps.ui.ViewIml.PageView;
-import andr.lexibook.mylittlestory.tlps.ui.R;
 import android.content.Context;
 import android.widget.AbsoluteLayout;
 
@@ -29,22 +29,26 @@ public class Page03 extends PageView {
         wood_house.setMovieAsset(ctx.getString(R.string.p03_wood_house));
         pig_yel.setMovieAsset(ctx.getString(R.string.p03_pig_yel));
 
-        params = (AbsoluteLayout.LayoutParams) pig_brown.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p03_pig_brown_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p03_pig_brown_y));
-        pig_brown.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) wood_house.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p03_wood_house_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p03_wood_house_y));
-        wood_house.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) pig_yel.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p03_pig_yel_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p03_pig_yel_y));
-        pig_yel.setLayoutParams(params);
-
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p03);
         layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(2));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_p03_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_p03_y));
+            params.width = (int) (getWidthScale() * BTN_WIDTH);
+            params.height = (int) (getWidthScale() * BTN_HEIGHT);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        pig_brown.Clear();
+        pig_yel.Clear();
+        wood_house.Clear();
     }
 }

@@ -11,15 +11,11 @@
             android:id="@+id/gif_p14_pigs"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p14_pigs_x"
-            android:layout_y="@dimen/p14_pigs_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p14_pig_blue"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p14_pig_blue_x"
-            android:layout_y="@dimen/p14_pig_blue_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p14_menu"
@@ -35,4 +31,11 @@
             android:layout_x="@dimen/p14_quit_x"
             android:layout_y="@dimen/p14_quit_y"
             />
+
+    <AbsoluteLayout
+            android:id="@+id/al_pause_p11"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/tlp_pause"
+            android:visibility="gone"></AbsoluteLayout>
 </AbsoluteLayout>

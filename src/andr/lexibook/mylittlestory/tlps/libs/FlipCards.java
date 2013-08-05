@@ -22,6 +22,7 @@ import andr.lexibook.mylittlestory.tlps.libs.utils.TextureUtils;
 import andr.lexibook.mylittlestory.tlps.libs.utils.UI;
 import android.view.MotionEvent;
 import android.view.View;
+
 import junit.framework.Assert;
 
 import javax.microedition.khronos.opengles.GL10;
@@ -400,11 +401,12 @@ public class FlipCards {
         return accumulatedAngle % 180;
     }
 
-    // add code
+    // add by hz
     public void nextPage() {
         forward = true;
         setState(STATE_AUTO_ROTATE);
         controller.showFlipAnimation();
         controller.getSurfaceView().requestRender();
     }
+
 }

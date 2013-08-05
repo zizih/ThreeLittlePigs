@@ -25,17 +25,25 @@ public class Page08 extends PageView {
         wolf.setMovieAsset(ctx.getString(R.string.p08_wolf));
         pigs_house.setMovieAsset(ctx.getString(R.string.p08_pigs_house));
 
-        params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_wolf_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_wolf_y));
-        wolf.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) pigs_house.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_pigs_house_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_pigs_house_y));
-        pigs_house.setLayoutParams(params);
-
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p08);
         layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(7));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_p08_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_p08_y));
+            params.width = (int) (getWidthScale() * BTN_WIDTH);
+            params.height = (int) (getWidthScale() * BTN_HEIGHT);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        wolf.Clear();
+        pigs_house.Clear();
     }
 }

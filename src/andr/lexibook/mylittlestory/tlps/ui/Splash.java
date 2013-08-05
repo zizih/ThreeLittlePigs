@@ -24,6 +24,7 @@ public class Splash extends BaseActivity implements View.OnClickListener {
         btn_splash_bg = (Button) findViewById(R.id.btn_splash_bg);
         btn_splash_bg.setOnClickListener(this);
         refreshBg();
+        setMenuView(findViewById(R.id.any_widget_4_menu_splash));
 
         mPlayer = mediaFactory.getSplash();
         try {
@@ -40,7 +41,6 @@ public class Splash extends BaseActivity implements View.OnClickListener {
                     toMenu();
             }
         }, 3000);
-
     }
 
     @Override
@@ -62,7 +62,6 @@ public class Splash extends BaseActivity implements View.OnClickListener {
         } else {
             toPage(Menu.class);
         }
-        finish();
     }
 
     @Override

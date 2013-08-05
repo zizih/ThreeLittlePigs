@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Created by rain on 6/2/13.
  */
-public class MenuBluePigGif extends GifMovieView {
+public class BluePigGif extends GifMovieView {
 
     private boolean isAutoPlayed = false;
     private boolean isSelfPlayed = false;
@@ -22,15 +22,15 @@ public class MenuBluePigGif extends GifMovieView {
     private MenuCallBack menuCallBack;
     private MenuListener endListener;
 
-    public MenuBluePigGif(Context context) {
+    public BluePigGif(Context context) {
         super(context);
     }
 
-    public MenuBluePigGif(Context context, AttributeSet attrs) {
+    public BluePigGif(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MenuBluePigGif(Context context, AttributeSet attrs, int defStyle) {
+    public BluePigGif(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
@@ -138,6 +138,10 @@ public class MenuBluePigGif extends GifMovieView {
             autoPlayer.release();
         if (selfPlayer != null)
             selfPlayer.release();
+        //add release gif
+        clearAnimation();
+        isAutoPlayed = true;
+        isSelfPlayed = true;
     }
 
 }

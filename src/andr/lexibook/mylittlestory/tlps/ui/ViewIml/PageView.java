@@ -2,13 +2,11 @@ package andr.lexibook.mylittlestory.tlps.ui.ViewIml;
 
 import andr.lexibook.mylittlestory.tlps.control.BgSrc;
 import andr.lexibook.mylittlestory.tlps.control.Setting;
-import andr.lexibook.mylittlestory.tlps.ui.R;
 import andr.lexibook.mylittlestory.tlps.util.ViewUtil;
 import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 import android.widget.AbsoluteLayout;
-import android.widget.ImageView;
 
 /**
  * User: rain
@@ -21,25 +19,21 @@ public class PageView extends View {
     protected static Activity ctx;
     public AbsoluteLayout page;
     public AbsoluteLayout layout;
+    public AbsoluteLayout pause;
     public AbsoluteLayout.LayoutParams params;
     public BgSrc bgSrc;
     public Setting setting;
+    public final int BTN_WIDTH = 48;
+    public final int BTN_HEIGHT = 44;
 
-    public CallBack callBack;
-    private ImageView play;
-    private ImageView pause;
-
-    public PageView(Context context, CallBack callBack, int layoutId) {
+    public PageView(Context context, int layoutId) {
         super(context);
         System.out.println(" New PageView: " + this.getClass().getName());
         this.ctx = (Activity) context;
-        this.callBack = callBack;
-
         page = (AbsoluteLayout) ctx.getLayoutInflater().inflate(layoutId, null);
         params = (AbsoluteLayout.LayoutParams) page.getLayoutParams();
         bgSrc = BgSrc.getInstance(ctx);
         setting = Setting.getInstance(ctx);
-
     }
 
     public AbsoluteLayout getLayout() {
@@ -70,12 +64,7 @@ public class PageView extends View {
         return ViewUtil.getInstance(ctx).getWinHeight();
     }
 
-    public interface CallBack {
-        public boolean play();
-
-        public boolean pause();
-
-        public boolean quit();
+    public void Clear() {
     }
 
 }

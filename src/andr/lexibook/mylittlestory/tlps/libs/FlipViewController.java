@@ -20,7 +20,6 @@ package andr.lexibook.mylittlestory.tlps.libs;
 import andr.lexibook.mylittlestory.tlps.libs.utils.AphidLog;
 import andr.lexibook.mylittlestory.tlps.ui.R;
 import android.content.Context;
-import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
 import android.graphics.Bitmap;
@@ -248,8 +247,26 @@ public class FlipViewController extends AdapterView<Adapter> {
         }
     }
 
+    public interface PlayPauseCallBack {
+        public void pauseOrPlay(View view, MotionEvent e);
+
+        public void onFliped(View view);
+
+        public void startFlip(View view);
+    }
+
+    private PlayPauseCallBack playPauseCallBack;
+
+
+    public void setPlayPauseCallBack(PlayPauseCallBack playPauseCallBack) {
+        this.playPauseCallBack = playPauseCallBack;
+    }
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        if (playPauseCallBack != null && (event.getAction() == MotionEvent.ACTION_DOWN)) {
+            playPauseCallBack.pauseOrPlay(bufferedViews.get(bufferIndex), event);
+        }
         if (flipByTouchEnabled) {
             return cards.handleTouchEvent(event, true);
         } else {
@@ -259,12 +276,11 @@ public class FlipViewController extends AdapterView<Adapter> {
 
     //--------------------------------------------------------------------------------------------------------------------
     // Orientation
-    @Override
-    protected void onConfigurationChanged(Configuration newConfig) {
-        //noinspection AndroidLintNewApi
-        super.onConfigurationChanged(newConfig);
-        //XXX: adds a global layout listener?
-    }
+//    @Override
+//    protected void onConfigurationChanged(Configuration newConfig) {
+//        super.onConfigurationChanged(newConfig);
+//        //XXX: adds a global layout listener?
+//    }
 
     //--------------------------------------------------------------------------------------------------------------------
     // AdapterView<Adapter>
@@ -438,15 +454,6 @@ public class FlipViewController extends AdapterView<Adapter> {
         adapterIndex = -1;
     }
 
-    private void setReleasedViews() {
-        for (View view : bufferedViews) {
-            releaseView(view);
-        }
-        bufferedViews.clear();
-        bufferIndex = -1;
-        adapterIndex = -1;
-    }
-
     private void releaseView(View view) {
         Assert.assertNotNull(view);
         detachViewFromParent(view);
@@ -560,8 +567,12 @@ public class FlipViewController extends AdapterView<Adapter> {
 
     void showFlipAnimation() {
         if (!inFlipAnimation) {
-            inFlipAnimation = true;
+            if (onViewFlipListener != null) {
+                if (playPauseCallBack != null)
+                    playPauseCallBack.startFlip(bufferedViews.get(bufferIndex));
+            }
 
+            inFlipAnimation = true;
             cards.setVisible(true);
             cards.setFirstDrawFinished(false);
             surfaceView.requestRender();
@@ -587,6 +598,8 @@ public class FlipViewController extends AdapterView<Adapter> {
 
             if (onViewFlipListener != null) {
                 onViewFlipListener.onViewFlipped(bufferedViews.get(bufferIndex), adapterIndex);
+                if (playPauseCallBack != null)
+                    playPauseCallBack.onFliped(bufferedViews.get(bufferIndex));
             }
 
             handler.post(new Runnable() {
@@ -597,13 +610,6 @@ public class FlipViewController extends AdapterView<Adapter> {
                     }
                 }
             });
-        }
-    }
-
-    //add by hezi
-    public void flipToPageAgain() {
-        if (onViewFlipListener != null) {
-            onViewFlipListener.onViewFlipped(bufferedViews.get(bufferIndex), adapterIndex);
         }
     }
 
@@ -633,10 +639,24 @@ public class FlipViewController extends AdapterView<Adapter> {
         }
     }
 
-    // modify code
+    //add by hz
+    public void flipToPageAgain() {
+        if (onViewFlipListener != null) {
+            onViewFlipListener.onViewFlipped(bufferedViews.get(bufferIndex), adapterIndex);
+            if (playPauseCallBack != null)
+                playPauseCallBack.onFliped(bufferedViews.get(bufferIndex));
+        }
+    }
+
+
+    // add by hz
     public void autoFlip() {
         if (adapterIndex + 1 < adapterDataCount) {
             cards.nextPage();
         }
+    }
+
+    public void Clear() {
+        releaseViews();
     }
 }

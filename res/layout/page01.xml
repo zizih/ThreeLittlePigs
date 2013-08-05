@@ -8,34 +8,21 @@
         >
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p01_pig_mom"
+            android:id="@+id/gif_p01_pigs"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p01_pig_mom_x"
-            android:layout_y="@dimen/p01_pig_mom_y"
             />
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p01_pig_yel"
+            android:id="@+id/gif_p01_butterfly"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p01_pig_yel_x"
-            android:layout_y="@dimen/p01_pig_yel_y"
             />
 
-    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p01_pig_brown"
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p01_pig_brown_x"
-            android:layout_y="@dimen/p01_pig_brown_y"
-            />
-    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p01_pig_blue"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/p01_pig_blue_x"
-            android:layout_y="@dimen/p01_pig_blue_y"
-            />
-
+            android:background="@drawable/tlp_pause"
+            android:visibility="gone"></AbsoluteLayout>
 </AbsoluteLayout>

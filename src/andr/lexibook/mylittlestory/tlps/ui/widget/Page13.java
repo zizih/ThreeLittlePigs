@@ -37,28 +37,26 @@ public class Page13 extends PageView {
         smoke.setMovieAsset(ctx.getString(R.string.p13_smoke));
         bird.setMovieAsset(ctx.getString(R.string.p13_bird));
 
-        params = (AbsoluteLayout.LayoutParams) pigs.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_pigs_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_pigs_y));
-        pigs.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) pig_blue.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_pig_blue_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_pig_blue_y));
-        pig_blue.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) smoke.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_smoke_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_smoke_y));
-        smoke.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) bird.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p13_bird_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p13_bird_y));
-        bird.setLayoutParams(params);
-
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p13);
         layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(12));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_p13_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_p13_y));
+            params.width = (int) (getWidthScale() * BTN_WIDTH);
+            params.height = (int) (getWidthScale() * BTN_HEIGHT);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        pig_blue.Clear();
+        pigs.Clear();
     }
 
 }

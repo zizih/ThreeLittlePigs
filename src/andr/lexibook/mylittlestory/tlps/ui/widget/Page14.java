@@ -41,16 +41,6 @@ public class Page14 extends PageView implements View.OnClickListener {
         btn_menu.setMovieAsset(btnSrc.setLang(setting.getLangId()).getMenuBack());
         btn_quit.setMovieAsset(btnSrc.setLang(setting.getLangId()).getQuit());
 
-        params = (AbsoluteLayout.LayoutParams) pigs.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p14_pigs_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p14_pigs_y));
-        pigs.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) pig_blue.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p14_pig_blue_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p14_pig_blue_y));
-        pig_blue.setLayoutParams(params);
-
         params = (AbsoluteLayout.LayoutParams) btn_menu.getLayoutParams();
         params.x = (int) (getWidthScale() * getDimens(R.dimen.p14_menu_x));
         params.y = (int) (getHeightScale() * getDimens(R.dimen.p14_menu_y));
@@ -80,6 +70,15 @@ public class Page14 extends PageView implements View.OnClickListener {
                 System.exit(0);
                 break;
         }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        pig_blue.Clear();
+        pigs.Clear();
+        btn_menu.Clear();
+        btn_quit.Clear();
     }
 
 }

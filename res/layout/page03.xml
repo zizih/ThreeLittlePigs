@@ -11,23 +11,24 @@
             android:id="@+id/gif_p03_wood_house"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p03_wood_house_x"
-            android:layout_y="@dimen/p03_wood_house_y"
             />
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p03_pig_brown"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p03_pig_brown_x"
-            android:layout_y="@dimen/p03_pig_brown_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p03_pig_yel"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p03_pig_yel_x"
-            android:layout_y="@dimen/p03_pig_yel_y"
             />
+
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/tlp_pause"
+            android:visibility="gone"></AbsoluteLayout>
 
 </AbsoluteLayout>

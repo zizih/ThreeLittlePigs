@@ -63,7 +63,7 @@ public class MyProgressDialog extends ProgressDialog {
                     Thread.sleep(2000);
                     System.gc();
                 }
-                while (!pageFactory.newPage(pageIndex));
+                while (pageFactory.getPage(pageIndex) == null);
                 mHandler.sendEmptyMessage(0);
             } catch (InterruptedException e) {
                 e.printStackTrace();

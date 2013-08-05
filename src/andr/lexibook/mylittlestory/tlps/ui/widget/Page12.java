@@ -19,6 +19,7 @@ public class Page12 extends PageView {
     private GifMovieView sun;
     private Intent menuIntent;
 
+    private AbsoluteLayout bg_up;
 
     public Page12(Context context) {
         super(context, R.layout.page12);
@@ -27,22 +28,36 @@ public class Page12 extends PageView {
 
         wolf = (GifMovieView) page.findViewById(R.id.gif_p12_wolf);
         sun = (GifMovieView) page.findViewById(R.id.gif_p12_sun);
+        bg_up = (AbsoluteLayout) page.findViewById(R.id.p12_bg_up);
 
         wolf.setMovieAsset(ctx.getString(R.string.p12_wolf));
         sun.setMovieAsset(ctx.getString(R.string.p12_sun));
 
-        params = (AbsoluteLayout.LayoutParams) wolf.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_wolf_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p12_wolf_y));
-        wolf.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) sun.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_sun_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p12_sun_y));
-        sun.setLayoutParams(params);
+        params = (AbsoluteLayout.LayoutParams) bg_up.getLayoutParams();
+        params.width = (int) getWinWidth();
+        params.height = (int) getWinHeight();
+        bg_up.setLayoutParams(params);
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p12);
         layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(11));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_p12_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_p12_y));
+            params.width = (int) (getWidthScale() * BTN_WIDTH);
+            params.height = (int) (getWidthScale() * BTN_HEIGHT);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        wolf.Clear();
+        sun.Clear();
     }
 
 }

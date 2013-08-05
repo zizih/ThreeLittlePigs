@@ -11,8 +11,12 @@
             android:id="@+id/gif_p10_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p10_wolf_x"
-            android:layout_y="@dimen/p10_wolf_y"
             />
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/tlp_pause"
+            android:visibility="gone"></AbsoluteLayout>
 
 </AbsoluteLayout>

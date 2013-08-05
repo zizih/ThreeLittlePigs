@@ -7,26 +7,29 @@
                 android:id="@+id/layout_p04"
         >
 
-    <LinearLayout
+    <AbsoluteLayout
+            android:id="@+id/p04_bg_up"
             android:layout_height="fill_parent"
             android:layout_width="fill_parent"
             android:background="@drawable/p04_bkg_cover">
 
-    </LinearLayout>
+    </AbsoluteLayout>
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p04_tree_coud"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p04_tree_cloud_x"
-            android:layout_y="@dimen/p04_tree_cloud_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p04_pig_blue"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p04_pig_blue_x"
-            android:layout_y="@dimen/p04_pig_blue_y"
             />
 
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/tlp_pause"
+            android:visibility="gone"></AbsoluteLayout>
 </AbsoluteLayout>

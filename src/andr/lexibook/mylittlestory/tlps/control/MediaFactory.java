@@ -92,7 +92,6 @@ public class MediaFactory {
     public MediaPlayer getPage12() {
         return getMedia(ctx.getResources().getString(R.string.mp3_p12));
     }
-
     public MediaPlayer getPage13() {
         return getMedia(ctx.getResources().getString(R.string.mp3_p13));
     }

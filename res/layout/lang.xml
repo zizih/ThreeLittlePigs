@@ -6,47 +6,40 @@
                 android:layout_height="fill_parent"
                 android:background="@drawable/lang_bkg">
 
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/any_widget_4_menu_lang"/>
+
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_lang_eng"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/lang_eng_x"
-            android:layout_y="@dimen/lang_eng_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_lang_fra"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/lang_fra_x"
-            android:layout_y="@dimen/lang_fra_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_lang_deu"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/lang_deu_x"
-            android:layout_y="@dimen/lang_deu_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_lang_esp"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/lang_esp_x"
-            android:layout_y="@dimen/lang_esp_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_lang_ita"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/lang_ita_x"
-            android:layout_y="@dimen/lang_ita_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_lang_wolf"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/lang_wolf_x"
-            android:layout_y="@dimen/lang_wolf_y"
             />
 
 </AbsoluteLayout>
