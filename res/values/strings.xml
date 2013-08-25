@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ThreeLittlePigs</string>
-    <string name="sp_name">ThreeLittlePigs</string>
+    <string name="app_name">Three Little Pigs</string>
+    <string name="sp_name">Three Little Pigs</string>
 
     <!--about language-->
     <string name="lang_english">English</string>
-    <string name="lang_franch">Francais</string>
+    <string name="lang_franch">Français</string>
     <string name="lang_eutsch">Deutsch</string>
     <string name="lang_espanol">Español</string>
     <string name="lang_italiano">Italiano</string>

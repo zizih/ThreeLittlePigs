@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MotionEvent;
+import android.view.WindowManager;
 
 import java.io.IOException;
 
@@ -42,6 +43,7 @@ public class BaseActivity extends CustomMenuBase implements BluePigGif.MenuCallB
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         Log.i(" Oncreate: ", this.getClass().getName());
         toPage = new Intent();
         inflater = getMenuInflater();

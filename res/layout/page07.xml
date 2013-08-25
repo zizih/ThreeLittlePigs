@@ -6,6 +6,13 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/layout_p07"
         >
+
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p07_star"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            />
+
     <AbsoluteLayout
             android:id="@+id/p07_bg_up"
             android:layout_height="fill_parent"
@@ -21,11 +28,6 @@
             android:id="@+id/gif_p07_pig_yel"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            />
-    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p07_star"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
             />
 
     <AbsoluteLayout
