@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import java.io.IOException;
+import java.util.Locale;
 
 /**
  * @author hezi
@@ -25,6 +26,11 @@ public class Splash extends BaseActivity implements View.OnClickListener {
         btn_splash_bg.setOnClickListener(this);
         refreshBg();
         setMenuView(findViewById(R.id.any_widget_4_menu_splash));
+
+        //set defualt lang
+        if (setting.isFirst()) {
+            toSysLang();
+        }
 
         mPlayer = mediaFactory.getSplash();
         try {
@@ -72,6 +78,29 @@ public class Splash extends BaseActivity implements View.OnClickListener {
 
     private void refreshBg() {
         this.btn_splash_bg.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getSplashDrawable());
+    }
+
+    private void toSysLang() {
+        String lang = Locale.getDefault().getLanguage();
+        if (lang.indexOf("fr") != -1) {
+            setting.setLang(FRANCH);
+            mediaFactory.toFraLang();
+        } else if (lang.indexOf("en") != -1) {
+            setting.setLang(ENGLISH);
+            mediaFactory.toEngLang();
+        } else if (lang.indexOf("it") != -1) {
+            setting.setLang(ITALIANO);
+            mediaFactory.toItaLang();
+        } else if (lang.indexOf("de") != -1) {
+            setting.setLang(EUTSCH);
+            mediaFactory.toDeuLang();
+        } else if (lang.indexOf("es") != -1) {
+            setting.setLang(ESPANOL);
+            mediaFactory.toEspLang();
+        } else {
+            return;
+        }
+        setting.save();
     }
 
 }
