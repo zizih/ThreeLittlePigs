@@ -21,16 +21,17 @@ public class Splash extends BaseActivity implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-        bgSrc = BgSrc.getInstance(this);
-        btn_splash_bg = (Button) findViewById(R.id.btn_splash_bg);
-        btn_splash_bg.setOnClickListener(this);
-        refreshBg();
-        setMenuView(findViewById(R.id.any_widget_4_menu_splash));
 
         //set defualt lang
         if (setting.isFirst()) {
             toSysLang();
         }
+
+        bgSrc = BgSrc.getInstance(this);
+        btn_splash_bg = (Button) findViewById(R.id.btn_splash_bg);
+        btn_splash_bg.setOnClickListener(this);
+        refreshBg();
+        setMenuView(findViewById(R.id.any_widget_4_menu_splash));
 
         mPlayer = mediaFactory.getSplash();
         try {
