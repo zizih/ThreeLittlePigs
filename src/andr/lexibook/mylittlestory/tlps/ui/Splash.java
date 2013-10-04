@@ -23,9 +23,9 @@ public class Splash extends BaseActivity implements View.OnClickListener {
         setContentView(R.layout.splash_screen);
 
         //set defualt lang
-        if (setting.isFirst()) {
-            toSysLang();
-        }
+//        if (setting.isFirst()) {
+//            toSysLang();
+//        }
 
         bgSrc = BgSrc.getInstance(this);
         btn_splash_bg = (Button) findViewById(R.id.btn_splash_bg);

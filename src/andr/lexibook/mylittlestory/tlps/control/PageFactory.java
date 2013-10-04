@@ -80,7 +80,6 @@ public class PageFactory {
 
         //dialog
         MyProgressDialog dialog = new MyProgressDialog(ctx, pageIndex);
-        dialog.setMessage("loading...");
         dialog.show();
 
         //after

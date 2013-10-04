@@ -11,8 +11,6 @@
             android:id="@+id/gif_p13_pig_blue"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p13_pig_blue_x"
-            android:layout_y="@dimen/p13_pig_blue_y"
             />
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p13_pigs"
