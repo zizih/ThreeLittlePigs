@@ -34,7 +34,7 @@ public class FlipAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = pageFactory.getPage(position) == null ? null : pageFactory.getPage(position).getLayout();
+        convertView = pageFactory.getPage(position).getLayout();
         pageFactory.removePage(position);
         BgSrc.getInstance(ctx).Clear();
         return convertView;

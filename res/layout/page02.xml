@@ -8,12 +8,6 @@
         >
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p02_flower"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            />
-
-    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p02_butterfly"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -21,6 +15,12 @@
 
     <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p02_wolf"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+    <andr.lexibook.mylittlestory.tlps.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p02_flower"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             />

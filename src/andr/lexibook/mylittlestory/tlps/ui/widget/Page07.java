@@ -37,7 +37,7 @@ public class Page07 extends PageView {
         bg_up.setLayoutParams(params);
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p07);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(6));
+        setBG(this.getContext(), layout, 6);
 
         if (setting.isAuto()) {
             pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);

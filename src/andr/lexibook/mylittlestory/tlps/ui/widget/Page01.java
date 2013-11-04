@@ -26,7 +26,7 @@ public class Page01 extends PageView {
         butterfly.setMovieAsset(context.getString(R.string.p01_butterfly));
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p01);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(0));
+        setBG(this.getContext(), layout, 0);
 
         if (setting.isAuto()) {
             pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);

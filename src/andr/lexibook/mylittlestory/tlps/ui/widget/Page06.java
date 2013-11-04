@@ -27,7 +27,7 @@ public class Page06 extends PageView {
         wolf.setMovieAsset(ctx.getString(R.string.p06_wolf));
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p06);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(5));
+        setBG(this.getContext(), layout, 5);
 
         if (setting.isAuto()) {
             pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);

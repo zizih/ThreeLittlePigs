@@ -5,8 +5,13 @@ import andr.lexibook.mylittlestory.tlps.control.Setting;
 import andr.lexibook.mylittlestory.tlps.util.ViewUtil;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.view.View;
 import android.widget.AbsoluteLayout;
+
+import java.io.InputStream;
 
 /**
  * User: rain
@@ -25,6 +30,7 @@ public class PageView extends View {
     public Setting setting;
     public final int BTN_WIDTH = 48;
     public final int BTN_HEIGHT = 44;
+    public Bitmap bitmapBg;
 
     public PageView(Context context, int layoutId) {
         super(context);
@@ -34,6 +40,21 @@ public class PageView extends View {
         params = (AbsoluteLayout.LayoutParams) page.getLayoutParams();
         bgSrc = BgSrc.getInstance(ctx);
         setting = Setting.getInstance(ctx);
+    }
+
+    public void setBG(Context ctx, View layout, int pageId) {
+        bitmapBg = readBitMap(ctx, bgSrc.setLang(setting.getLangId()).getPageDrawableId(pageId));
+        layout.setBackgroundDrawable(new BitmapDrawable(bitmapBg));
+    }
+
+    public static Bitmap readBitMap(Context context, int resId) {
+        BitmapFactory.Options opt = new BitmapFactory.Options();
+        opt.inPreferredConfig = Bitmap.Config.RGB_565;
+        opt.inPurgeable = true;
+        opt.inInputShareable = true;
+        //获取资源图片
+        InputStream is = context.getResources().openRawResource(resId);
+        return BitmapFactory.decodeStream(is, null, opt);
     }
 
     public AbsoluteLayout getLayout() {
@@ -65,6 +86,9 @@ public class PageView extends View {
     }
 
     public void Clear() {
+        if(!bitmapBg.isRecycled()) {
+            bitmapBg.recycle();
+        }
     }
 
 }

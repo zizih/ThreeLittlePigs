@@ -26,7 +26,7 @@ public class Page08 extends PageView {
         pigs_house.setMovieAsset(ctx.getString(R.string.p08_pigs_house));
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p08);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(7));
+        setBG(this.getContext(), layout, 7);
 
         if (setting.isAuto()) {
             pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);

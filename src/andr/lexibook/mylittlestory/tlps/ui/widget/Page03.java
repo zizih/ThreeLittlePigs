@@ -30,7 +30,7 @@ public class Page03 extends PageView {
         pig_yel.setMovieAsset(ctx.getString(R.string.p03_pig_yel));
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p03);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(2));
+        setBG(this.getContext(), layout, 2);
 
         if (setting.isAuto()) {
             pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);

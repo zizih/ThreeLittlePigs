@@ -38,7 +38,7 @@ public class Page13 extends PageView {
         bird.setMovieAsset(ctx.getString(R.string.p13_bird));
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p13);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(12));
+        setBG(this.getContext(), layout, 12);
 
         if (setting.isAuto()) {
             pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);

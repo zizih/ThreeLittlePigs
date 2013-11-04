@@ -55,7 +55,7 @@ public class Page14 extends PageView implements View.OnClickListener {
         btn_quit.setOnClickListener(this);
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p14);
-        layout.setBackgroundResource(bgSrc.setLang(setting.getLangId()).getPageDrawableId(13));
+        setBG(this.getContext(), layout, 13);
     }
 
 
