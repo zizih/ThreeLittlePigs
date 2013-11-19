@@ -2,6 +2,7 @@ package andr.lexibook.mylittlestory.tlps.model;
 
 import andr.lexibook.mylittlestory.tlps.control.BgSrc;
 import andr.lexibook.mylittlestory.tlps.control.PageFactory;
+import andr.lexibook.mylittlestory.tlps.ui.ViewIml.PageView;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +35,7 @@ public class FlipAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = pageFactory.getPage(position) == null ? null : pageFactory.getPage(position).getLayout();
+        convertView = pageFactory.getPage(position).getLayout();
         pageFactory.removePage(position);
         BgSrc.getInstance(ctx).Clear();
         return convertView;
