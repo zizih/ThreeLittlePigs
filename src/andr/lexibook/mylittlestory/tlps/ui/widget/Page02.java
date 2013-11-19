@@ -25,8 +25,8 @@ public class Page02 extends PageView {
         butterfly = (GifMovieView) page.findViewById(R.id.gif_p02_butterfly);
         wolf = (GifMovieView) page.findViewById(R.id.gif_p02_wolf);
 
-        butterfly.setMovieAsset(ctx.getString(R.string.p02_flower));
-        flower.setMovieAsset(ctx.getString(R.string.p02_butterfly));
+        butterfly.setMovieAsset(ctx.getString(R.string.p02_butterfly));
+        flower.setMovieAsset(ctx.getString(R.string.p02_flower));
         wolf.setMovieAsset(ctx.getString(R.string.p02_wolf));
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p02);
